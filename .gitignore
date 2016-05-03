@@ -1,8 +1,7 @@
 To Do.txt
 .idea/
+pip-selfcheck.json
+local/
 bin/
 include/
 lib/
-local/
-pip-selfcheck.json
-CMUTweetTagger/
