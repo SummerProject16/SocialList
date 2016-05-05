@@ -14,6 +14,7 @@ print "done"
 Tags=ctt.runtagger_parse(segData)
 i=0
 for x in Tags:
-    if "".join(x)=="$NPV" or "".join(x)=="N" or x[0]=='$' :
+    if 1 :
+        print x
         print segData[i]
     i+=1
