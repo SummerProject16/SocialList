@@ -6,15 +6,15 @@ segData=[]
 i=0
 for data in datasets:
     print i
-    segData.append(" ".join(ws.segment(data)))
+    data1=data.split(" ")
+    if i<10000 and (data1[1] == '1' or data1[1] == '2'):
+        segData.append(" ".join(ws.segment(data1[0])))
     i+=1
-    if i == 5:
-        break
 print "done"
 Tags=ctt.runtagger_parse(segData)
 i=0
 for x in Tags:
     if 1 :
-        print x
+        print x, i
         print segData[i]
     i+=1

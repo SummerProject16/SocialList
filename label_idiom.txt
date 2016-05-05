@@ -22,7 +22,7 @@ TheWesternDistrictWay 0
 gentbenparidafentcosesbenparides 0
 gentecabreada 0
 gentecheseguitevoi 0
-gentelemenpreferplastic 2
+gentelemenpreferplastic 0
 TheWesternSenators 0
 gentemuybuenamuybuenagente 0
 gentequenosabedefutbol 0
@@ -92,8 +92,8 @@ TheWhiteKingFelix 0
 TheWhiteLegShow 0
 TheWhiteLinesAre 0
 genuinelylikeyou 0
-genuinelysoundsbad 1
-genuinelywantstoknow 1
+genuinelysoundsbad 0
+genuinelywantstoknow 0
 TheWhiteManWouldScalpHimToo. 0
 TheWhiteRabbitArtTrail. 0
 genuinepacetoburn 1
@@ -283,7 +283,7 @@ georgianeedshenribendelbabybag 0
 TheWinnerIsPacquiao 0
 georgiaonmymind” 0
 georgiaonyourmind? 0
-TheWinnerKeepsCalm 1
+TheWinnerKeepsCalm 0
 TheWinnerTakesItAllPart2 0
 georgiarepublicanvoter 0
 georgiaseaislandsingers 0
@@ -1150,7 +1150,7 @@ TheWorstConversationStarter 1
 getatiyaonkleinfeld 0
 getatlanticonvirgin 0
 TheWorstFederalAgentOnTelevision.” 1
-TheWorstFeelingEver”{I 1
+TheWorstFeelingEver”{I 0
 TheWorstFeelingEver”😭😭😭 1
 TheWorstFeeling”#N##N#😭😭😭🏃🏃🏃 2
 TheWorstFourWords 1
