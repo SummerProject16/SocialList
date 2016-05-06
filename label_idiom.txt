@@ -190,7 +190,7 @@ TheWifeLovesThem 0
 geordiefamilyincludinghalfkiwis 0
 TheWifeOnTwitter 0
 geordiefortheday 0
-geordiegirlsdrinkmore 0
+geordiegirlsdrinkmore 1
 geordieinthecity 0
 geordierugbygirlsontour 0
 geordiesarethefriendliest 0
@@ -283,7 +283,7 @@ georgianeedshenribendelbabybag 0
 TheWinnerIsPacquiao 0
 georgiaonmymind” 0
 georgiaonyourmind? 0
-TheWinnerKeepsCalm 0
+TheWinnerKeepsCalm 1
 TheWinnerTakesItAllPart2 0
 georgiarepublicanvoter 0
 georgiaseaislandsingers 0
@@ -291,7 +291,7 @@ georgiaslastwish 0
 georgiastatejokes 0
 georgiastate”hell 0
 georgiatakeover 0
-georgiaweathersucks 0
+georgiaweathersucks 
 georgidoesmedirty 0
 georgie&amp;chachimoments💕 0
 georgie'sfooddelivery 0
@@ -348,9 +348,9 @@ TheWinningIsSoMuchSweeterWhenTheBattleWasAToughOne 0
 gerdoesntseethepointtotravelinh 0
 gerechtigkeitinmünchen 0
 gereformeerd 0
-TheWinningTeamValues 0
+TheWinningTeamValues 1
 TheWinningWaysEP 0
-geriatricCareHealth 0
+geriatricCareHealth 1
 geriatricbackpackertips 0
 geriatricforthewin 0
 TheWinterIsHere" 0
@@ -360,7 +360,7 @@ geriatricturnups 0
 TheWinterIsOurs 0
 TheWinterOfBlake#N#http:\/\/t.co\/S8m1cUCjJC 0
 TheWinterSoldier'!😉 0
-TheWinterStruggleIsReal 0
+TheWinterStruggleIsReal 1
 gerisayım#N##N#Twitter 0
 TheWinterThatWon'tEnd! 0
 gerlerozstruggles 0
@@ -370,7 +370,7 @@ germanBelieberMums 0
 german_compensation_wwii 0
 TheWireBingeWatch#N##N#“@mareli221: 0
 germanboyarianator 0
-germanboysarebetter 0
+germanboysarebetter 1
 germanbrawnfrenchflair 0
 germanbreadrealbread 0
 germancarsforlyfe 0
@@ -420,10 +420,10 @@ TheWittleFireThatCould 0
 germanyworldchampions 0
 germfactories...I 0
 TheWizardAndI 0
-TheWizardOfAdalynberg 0
+TheWizardOfAdalynberg 1
 TheWizardOfOz#N##N##TCMParty” 0
 germsallover. 0
-TheWizardOfWinter 0
+TheWizardOfWinter 1
 TheWizardofFanduel 0
 germsonlyhygienistslove 0
 geronimoandbemagnificent 0
@@ -6190,8 +6190,7 @@ getyourexback2015”that's 0
 ThenextDenzelWashington 0
 ThenextbigthingisHERE 0
 Thenextstep15 0
-getyoureyescheckedppl 0
-getyoureyescheckedrefs 0
+getyoureyescheckedppl 1
 getyoureyesofftherealkiller 0
 getyoureyesright 0
 getyoureyesup 0
