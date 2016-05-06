@@ -3041,13 +3041,13 @@ getneonbaseballs 0
 getneoutofhere 0
 getnerdyinthedesert 0
 Thechequebookone 0
-Thechimichangasarereal 1
-Thechocolatepromise 1
+Thechimichangasarereal 0
+Thechocolatepromise 2
 getnewcommentator 0
 getnewmaterialbish 0
 ThechurchneedsYOU 0
 getnewprpeople 0
-Thecityispurpleandwhite 2
+Thecityispurpleandwhite 0
 getnewtownabbeyfit 0
 getnexttome 0
 getniatofollowkiley 0
@@ -3070,7 +3070,7 @@ getoanit 0
 getochointheleague 0
 getodinonellen, 0
 Thecomeupradio 0
-getoffFacebook” 1
+getoffFacebook” 0
 Thecomment_darto 0
 getoffalabamanuts 0
 getoffandgetyourlifestarted” 0
@@ -3097,9 +3097,9 @@ Thecooloutmix.Bless 0
 getoffmyTVbrandi 0
 getoffmybackdad 0
 getoffmybackpls 0
-getoffmybum 0 
+getoffmybum 0
 getoffmycheese! 0
-Thecorporatedoesntrule 2
+Thecorporatedoesntrule 0
 getoffmyd**k 0
 getoffmydadwearenotgoingdatway 0
 getoffmydoorstep 0
@@ -3118,7 +3118,7 @@ getoffmymansstuff 0
 getoffmymentionspapijay 0
 getoffmymomma 0
 getoffmymoondude 0
-Thecrazybrownmen 2
+Thecrazybrownmen 1
 getoffmypeehole 0
 getoffmyroad 0
 getoffmysack 0
@@ -3211,7 +3211,7 @@ getoffyourhelicopter 0
 getoffyourhighhorsebrennan 0
 getoffyourhighhotseandhelp 0
 getoffyourhorseanddrinkyourmilk 0
-Thedangerousmagicalnegro 1
+Thedangerousmagicalnegro 0
 getoffyourparentspayroll! 0
 getoffyourperiod 0
 getoffyourperiod” 0
@@ -3229,7 +3229,7 @@ getoliveradate 0
 getoliviato1k 0
 Thedayofchange 0
 getomaragirl 0
-Thedaysofchildhood 0
+Thedaysofchildhood 1
 geton#thoughts? 0
 getonAussieradio 0
 getonElizaslevel 0
@@ -3246,7 +3246,7 @@ Thedeathofreason..We 0
 getonboardthewinningteam 0
 getonboyy 0
 getoncatchup 0
-Thedecision2015 2
+Thedecision2015 0
 getondashingdan 0
 getondatpandora 0
 getoneanyway 0
@@ -3285,7 +3285,7 @@ getonmotdclint 0
 getonmyactuallevel 0
 getonmybadparentinglevel 0
 getonmyhugeballsgrind 0
-ThedevilisaLie 0
+ThedevilisaLie 1
 getonmylevel#gratata#smokeweedevryday#shotsfired#imsorry 0
 getonmylevelbish 0
 getonmylevelbitchhh 0
@@ -3315,7 +3315,7 @@ getonourlevel✊🏻 0
 getonourlevel😉 0
 getonplaneearly 0
 getonpowerplate 0
-Thedivergentfandom 2
+Thedivergentfandom 0
 getonregister3bitch 0
 getonrightnow 0
 getonsteviepike 0
@@ -3337,7 +3337,7 @@ getonthebandwaggon 0
 Thedressisblueandblack 0
 getonthebigwater 0
 getonthebikegirl 0
-Thedrinkingstagebeginsagain!! 1
+Thedrinkingstagebeginsagain!! 2
 getontheboy 0
 getonthebus...@TigerTigerTav 0
 getonthebusbitch! 0
@@ -3384,7 +3384,7 @@ getonurknees 0
 getonvinerightnow 0
 getonwhitslevel 0
 getonwithfootball 0
-TheeBestTanEver 1
+TheeBestTanEver 0
 getonwithit!!! 0
 getonwithitLisa 0
 getonwithitsam 0
@@ -3490,7 +3490,7 @@ TheendoftheWorld 1
 TheeseBitchesOutrageous 0
 getoutofjailfreecard...or 0
 TheeseHmmHmmGirlsAintLoyal 0
-getoutofmaface 0
+getoutofmaface 1
 getoutofmetraphouse 0
 getoutofmine 0
 getoutofmybasement 0
@@ -3509,7 +3509,7 @@ getoutofmypocket 0
 getoutofmysandbox 0
 getoutofmyseat 0
 getoutofmywayyes 0
-Thefalloftheempire 2
+Thefalloftheempire 0
 getoutofourhouse 0
 getoutofourpics 0
 getoutofourpitgoose 0
@@ -3523,7 +3523,7 @@ getoutofthebarn” 0
 getoutofthebasementonceinawhile 0
 getoutofthebeltway 0
 getoutoftheblocksfast 0
-ThefanswantRican 1
+ThefanswantRican 0
 getoutoftheguac 0
 getoutofthehouseandoffxbox 0
 getoutofthemidwest 0
@@ -3565,7 +3565,7 @@ getouttamybizzznesss 0
 getouttamycountry 0
 getouttamydobsessedbraainnnnnnn 0
 Thefightingtortillas 0
-Thefightofthecentury 1
+Thefightofthecentury 0
 getouttamypub! 0
 getouttamysoul 0
 getouttamytimelineyouslaaags 0
@@ -3619,7 +3619,7 @@ getoutyourboomspray 0
 getoutyourhose 0
 getouutaworkfreecard 0
 getoverBF4slaunch 0
-Thefirstniggatokilldrake 1
+Thefirstniggatokilldrake 0
 getoverhatingwomen 0
 getoverherself 0
 Theflagisnottheissueheredude. 0
@@ -3745,7 +3745,7 @@ getreadyforawriteup 0
 getreadyforbeachseason 0
 getreadyfordailyupdates 0
 getreadyforemails 0
-ThefutureisbrightinbigD 2
+ThefutureisbrightinbigD 0
 getreadyforfriday 0
 getreadyforgame7 0
 Thefutureisbrightthefutureisorange 0
@@ -3809,12 +3809,12 @@ getrektlolstormravager. 0
 Thegingerbreadman 0
 getrektonedirection 0
 getrektpaul#N##N#Gotta 0
-Thegirlcantsayiloveyou 0
+Thegirlcantsayiloveyou 1
 getrekttwitter 0
 getrektwithnynthia 0
 getreplacementsfortherhodes! 0
 getresentyintheoxforddictionary 0
-Thegirlfromfrance 0
+Thegirlfromfrance 1
 getresultsfast 0
 getretweeting 0
 Thegirlfromnagasaki 0
@@ -3849,7 +3849,7 @@ getridofallofthem 0
 getridofandrewjackson 0
 getridofbadrubbish 0
 getridofbettman 0
-ThegoldenTouch 2
+ThegoldenTouch 0
 getridofcokeheads2015 0
 getridofdante” 0
 getridofdatmess 0
@@ -3891,7 +3891,7 @@ getridofstebredelovski 0
 getridofstubhub 0
 getridofsubrule 0
 getridofthatchrome 0
-ThegoodthingaboutTonyAbbott 1
+ThegoodthingaboutTonyAbbott 0
 getridofthe3 0
 getridofthebeard 0
 getridofthebush 0
@@ -3930,17 +3930,17 @@ getrobynduncanout 0
 ThegravecouldnotholdHim 0
 Thegreat1returns 0
 getrooneyplayingoffyou 0
-ThegreatJefferyWalter 2
+ThegreatJefferyWalter 0
 getroryontheshow 0
 getrossintheteam 0
 getroundperiphery 0
 getrrightmommy 0
 getrubbersheets 0
 getrubytolondon 0
-ThegreatMarkJackson 2
+ThegreatMarkJackson 0
 Thegreatbabyoyesale#N#Lil'posh#N#lil'posh 0
-Thegreatbattleoftheskinnys 0
-Thegreatdepression 0
+Thegreatbattleoftheskinnys 1
+Thegreatdepression 1
 getsDrakeandPaparazzi 0
 getsLabouritesPissed 0
 getsUnfollowedByJesus 0
@@ -3956,7 +3956,7 @@ getsambacktofrogmore 0
 getsamiraontwitter 0
 getsammichtoformal2k15 0
 getsamoneaufc 0
-Thegreatestgiftyoucangive 1
+Thegreatestgiftyoucangive 0
 getsamtosingforleeirving 0
 getsamuontwitter. 0
 Thegreatsilentman 0
@@ -3967,7 +3967,7 @@ getsarato5Hreflectiontour2015 0
 getsaroundthebackintheboxlittleshimmyandshoots! 0
 getsashaongreys 0
 getsauceywithit 0
-Thegreencityinthesun 1
+Thegreencityinthesun 0
 getsavingfordrinks 0
 getsawawithmurder 0
 getsbestofthebest 0
@@ -3979,7 +3979,7 @@ Thegrindneverstop 0
 getscaredeuropetour 0
 getscatofftwitter 0
 getschooledatschool 0
-TheguysattheBBMAS 0
+TheguysattheBBMAS 1
 Theguysweetsme 0
 getscotlandthevote 0
 getscrubbingminions 0
@@ -4051,7 +4051,7 @@ getsmistakenforkylie 0
 getsmitigationinjustincase 0
 getsmorereboundsthanchrisbosh 0
 getsniffingthatsuncream!!😂😂 0
-Theillestliverpoolstricker! 1
+Theillestliverpoolstricker! 0
 TheimagesIhaveOmg 0
 Theimpatienceisreal 0
 getsnxboxone 0
@@ -4208,9 +4208,9 @@ getstacietowimbledon. 0
 getstagecoachin 0
 getstamkosthecup 0
 getstanleyatan 0
-TheirIdeaOfThings 1
+TheirIdeaOfThings 0
 TheirIsAFriday 0
-TheirIsOnlyOneDavidDeGea 1
+TheirIsOnlyOneDavidDeGea 0
 getstartedontheletter 0
 getstellaaboy 0
 getstephanietodublin 0
@@ -4484,7 +4484,7 @@ getthefactsbeforeyoutype 0
 getthefactsgurl 0
 getthefactsjack 0
 getthefactsrightmate 0
-Theitlalianstallion 1
+Theitlalianstallion 0
 getthefalconstofinals” 0
 getthefaxmachineready 0
 TheivamDaNee 0
@@ -4603,7 +4603,7 @@ getthemoutforthewkend 0
 getthemoutofmylife 0
 getthemouttoo 0
 getthempicks 0
-Thekidsneedyou. 0
+Thekidsneedyou. 1
 getthemrcleanlook 0
 getthemrumbling! 0
 getthemsacked 0
@@ -4622,7 +4622,7 @@ getthemwhiletheyreyoung 0
 getthemwhiletheyreyoung! 0
 getthemworried 0
 getthenationfit 0
-ThekingandTheDevil 2
+ThekingandTheDevil 0
 getthenerdlook 0
 getthenrlon 0
 getthenuggetnow 0
@@ -4636,7 +4636,7 @@ getthepanon 0
 getthepapersin 0
 gettheparaderouteready 0
 gettheparamedicivebangedmyelbow 0
-Thekingofmelonia 1
+Thekingofmelonia 0
 getthepartystarted.. 0
 ThekingsWalkBiggerBreakfast 0
 getthephuckouttahere 0
@@ -4705,7 +4705,7 @@ gettheteaonlove 0
 getthetideSLSPto100K 0
 getthetidedrewto18k 0
 getthetidelevito19k 0
-ThelastSamurai 2
+ThelastSamurai 0
 getthetideto12m 0
 getthetissuesready”@liltarmstrong 0
 getthetoaSenate 0
@@ -4771,7 +4771,7 @@ getthispartystartedright 0
 getthispizza 0
 getthisplugouttahere 0
 getthisthingoutofme 0
-Thelegendcontinues 1
+Thelegendcontinues 0
 getthiswinteroverwith 0
 getthose1sttimers 0
 getthoseAs 0
@@ -4780,7 +4780,7 @@ getthosebatsgoing 0
 getthosebeersincunt 0
 getthosebeverages” 0
 getthoseburgers! 0
-ThelegendofKorra 1
+ThelegendofKorra 0
 getthoseemailsin 0
 getthosefeetup 0
 getthosegbs 0
@@ -4812,7 +4812,7 @@ gettinMeFrustrated 0
 gettinTHATlazy 0
 gettinafteriteveryday 0
 gettinanycallspatty? 0
-ThelifeofWillard 2
+ThelifeofWillard 0
 gettinbackinshape 0
 gettinbetter#gohokies 0
 gettinbigonabudget 0
@@ -4837,7 +4837,7 @@ getting2old4thisshit 0
 gettingAfterIt 0
 gettingAriseoutofyou 0
 gettingDirtyMoney 0
-Thelittlethings” 0
+Thelittlethings” 1
 gettingFactsRightIsKey 0
 gettingItDone! 0
 gettingItWrong 0
@@ -4907,7 +4907,7 @@ gettingboredoffooty 0
 Thelovebelow”!!!!!!!! 0
 gettingbravewithit 0
 gettingbraveyanaaaa 0
-Theloveisalive 1
+Theloveisalive 0
 gettingbulliedbymylamechoirteacher 0
 gettingbulliedbymyroommates 0
 gettingbywithalittlehelpfrommyfriends:-) 0
@@ -5048,7 +5048,7 @@ ThemFeelsBrah 0
 gettinglookedaftet 0
 ThemFeelsThough 0
 gettinglostinlost 0
-gettinglostonamotorcycle 1
+gettinglostonamotorcycle 0
 gettingluckyagain 0
 ThemFictionalCharactersThem 0
 ThemFlashGuysAh 0
@@ -5069,7 +5069,7 @@ gettingmorebrown 0
 gettingmoreconfusedbythetweet 0
 gettingmorerightwingwithage 0
 gettingmoresmart 0
-ThemFriesTho 0
+ThemFriesTho 1
 gettingmyDIYon 0
 gettingmyappetiteback 0
 gettingmyarmin 0
@@ -5098,7 +5098,7 @@ ThemGoodMeds 0
 gettingmymoneyworth 0
 ThemGoodOleDaysYep 0
 gettingmynon-specification 0
-gettingmypraiseon 0
+gettingmypraiseon 1
 gettingmyrecallfixed 0
 gettingmyselfintrouble 0
 gettingmysewerveon 0
@@ -5282,15 +5282,15 @@ ThemRussianGirlsSoCold 0
 gettingthatplantogetheryo 0
 gettingthatsap 0
 gettingthatv 0
-gettingthe"job"done 2
+gettingthe"job"done 0
 gettingtheLEDout 0
 ThemShitsSkrongg 0
 gettingtheachenow 0
 gettingtheappNOW 0
 gettingthebigbucks 0
-gettingtheboysready 2
+gettingtheboysready 0
 gettingthebroomready 0
-gettingtheclapgoals 2
+gettingtheclapgoals 0
 gettingthedeathstarewhileatype 0
 gettingtheexcusesin 0
 gettingthefeelingsback 0
@@ -5390,7 +5390,7 @@ gettingweeeeiiirrrrd 0
 gettingweirder&amp;weirder 0
 gettingwhathedeserves 0
 gettingwhatyoudeserve 0
-ThemagicoftheFAcup 1
+ThemagicoftheFAcup 0
 gettingwhoshowsup 0
 gettingwildandcrazyoverhere 0
 Themainturnup 0
@@ -5403,7 +5403,7 @@ gettingyoubackforyourcomment 0
 gettingyoungernotolder 0
 gettingyoungeryearbyyear 0
 gettingyourexcusesinearly?! 0
-Themanwhonevermissed 1
+Themanwhonevermissed 0
 gettingyourscienceoutthere 0
 Themanwhowalkedacrookedmile 0
 gettinhimsome 0
@@ -5598,7 +5598,7 @@ getupgetouttaheregone 0
 getupindemdrawls 0
 getupinit 0
 getupioane 0
-ThemostbeautifulPrince 0
+ThemostbeautifulPrince 1
 getupmicromax 0
 getupnwatchthesunrise 0
 Themostinterestingmanintheworld 0
@@ -5653,13 +5653,13 @@ getusathickshakemaaate 0
 getusaticketlads 0
 getusbacktosoton 0
 getuscoffeeorwegohome 0
-getusdrinks 0
+getusdrinks 1
 getused2polident 0
 getusedtobeingthere 0
 getusedtodisappointment 0
 getusedtoit" 0
 getusedtonosleep!! 0
-getusedtoseeingthis 0
+getusedtoseeingthis 1
 getusedtothatinNica 0
 getusedtothenewnormal 0
 getusetothedollarmenu 0
