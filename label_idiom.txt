@@ -22,7 +22,7 @@ TheWesternDistrictWay 0
 gentbenparidafentcosesbenparides 0
 gentecabreada 0
 gentecheseguitevoi 0
-gentelemenpreferplastic 0
+gentelemenpreferplastic 1
 TheWesternSenators 0
 gentemuybuenamuybuenagente 0
 gentequenosabedefutbol 1
@@ -47,14 +47,11 @@ TheWetterTheBetter4 0
 TheWhaleLovesInterns 0
 TheWhatAndTheWhy 0
 TheWhatIfMachine 0
-TheWhatsUpShow 0
 gentlemenofthegame 0
 gentlemenonlyladiesforbidden 0
 gentlemensclubadvertisingacrossfrompreachers 0
-gentlemenscoffeetime 0
-gentlemenscurlingclub 0
+gentlemenscoffeetime 1
 TheWheelOfFortune 1
-TheWheelOfFortune? 0
 TheWheelchairPresident 1
 TheWheelerDealerTreatment 0
 TheWheelsOfChange's 0
@@ -79,17 +76,12 @@ TheWhispers”THANK 0
 gentstomeet....#wittytoo..Xx 0
 genuflectinginyourgeneraldirection 0
 genuflectsbeforeJoGrimond# 0
-genuineactsofkindness 0
 TheWhiteBalotelli 0
-genuineconcerndespitepolitics 0
-genuinedevelopmentofpeople 0
-genuinefootballopinion 0
+genuinefootballopinion 1
 genuineguydonlossthat 0
 genuinehonestconsistentfunnywholesomesensitive 0
 TheWhiteHouseErred 0
-genuineloveandcare 0
 TheWhiteKingFelix 0
-TheWhiteLegShow 0
 TheWhiteLinesAre 0
 genuinelylikeyou 0
 genuinelysoundsbad 0
@@ -97,7 +89,6 @@ genuinelywantstoknow 0
 TheWhiteManWouldScalpHimToo. 0
 TheWhiteRabbitArtTrail. 0
 genuinepacetoburn 0
-genuinerockandroll 0
 TheWhiteRamires 0
 genuinetaichiismindandenergytraining 0
 genuinetalent”#N#Me 0
@@ -110,7 +101,6 @@ TheWhiteWhitePlatoon 0
 TheWhiteWolfProphecy's 1
 TheWhiteYayaToure 0
 TheWhitneyIKnew 0
-TheWhoFeature? 0
 TheWhoGoat 0
 geocacherofthemonth 0
 TheWhoTape 0
@@ -141,7 +131,7 @@ TheWholeStationDoesIt 0
 TheWholeTeamDrinking 0
 geographiclychallenged 1
 geography#N#@adamlcarey 0
-TheWholeWorld2015 0
+TheWholeWorld2015 1
 geographybymatthew 0
 geographyfordummys 0
 TheWholeWorldIsWaiting 0
@@ -370,7 +360,7 @@ germanBelieberMums 0
 german_compensation_wwii 0
 TheWireBingeWatch#N##N#“@mareli221: 0
 germanboyarianator 0
-germanboysarebetter 0
+germanboysarebetter 1
 germanbrawnfrenchflair 0
 germanbreadrealbread 1
 germancarsforlyfe 0
@@ -385,7 +375,7 @@ TheWire”he 0
 germangirlwasbleeding 0
 TheWisconsinAnswerIsAlwaysDrinking 0
 germangreygaygategate 0
-TheWisdomOfChildren 0
+TheWisdomOfChildren 1
 germaninthebattleofthesomme 0
 TheWisdomOfJames 0
 germanonamission 0
@@ -414,8 +404,7 @@ germanymissyou!❤️ 0
 germanyneedscolleenandkory 0
 germanysnextsuperstar 1
 TheWittgensteinDothProtestTooMuch 0
-germanywantsfutureheartstour 0
-germanywantsmcbusted 0
+germanywantsmcbusted 1
 TheWittleFireThatCould 0
 germanyworldchampions 0
 germfactories...I 0
@@ -493,7 +482,7 @@ TheWomanIsntAlwaysRight 1
 gespanntaufsvideo 0
 gesslerowefollowspree 0
 TheWomanNotTheCountry 0
-TheWomanOfMensDreams 0
+TheWomanOfMensDreams 1
 TheWomanOfTheYear 1
 gestsomerestzayn 0
 gesturestoburgerplace 0
@@ -508,7 +497,7 @@ get#yourself#down#4#N##more#soulcreek 0
 get'emget'emlmao 0
 get-past-the-age! 0
 get15casesjustincase 0
-TheWomanThatIsHerOwnMan 0
+TheWomanThatIsHerOwnMan 1
 TheWomenAreRising 0
 TheWomenHaveSpoken 0
 TheWomenTellAll...? 0
@@ -542,7 +531,7 @@ TheWoodOverHim 0
 getAshbackUPTOP 0
 getAshton5SOStoDGformal2k15 0
 getAtMehh 0
-TheWoodSideOfTheThings 0
+TheWoodSideOfTheThings 1
 getAwatch#N##nicedreams 0
 getBASED10,000Back 0
 getBEHINDmeSATAN!!! 0
@@ -579,7 +568,7 @@ getElmertotrend 0
 TheWordAtShaw✊ 0
 getEndiporky 0
 getEricaaboyfriendthroughTinder" 0
-TheWordICouldntKeep 0
+TheWordICouldntKeep 1
 getFULLYhealthy 0
 getFadedAwindow 0
 getFatTogether 0
@@ -706,7 +695,7 @@ getRissyPoosPhone 0
 TheWorldBelogsToZayn 0
 TheWorldBelowWatfordGap? 0
 TheWorldBetterPrepare 0
-TheWorldCanChange 0
+TheWorldCanChange 1
 getScholseysopinion 0
 TheWorldCanComeVisitMeIAintMovingOutOfMyZone 0
 getStrogintheAyrshireTeam 0
@@ -768,7 +757,7 @@ getYourHandsOnMe 0
 getYourHeadChecked 0
 TheWorldIsAVampire 0
 getYourMindOutofTheGutter 0
-getYourOwnHashtag 1
+getYourOwnHashtag 0
 getYourQuestionsAnswered 1
 getYourTissuesPeople 0
 getYourWaistTrainerOut 0
