@@ -7,12 +7,12 @@ TheWestImpossingOnAfricaAgain 0
 TheWestIsFreo's 0
 genovahatesyou 0
 genoviaordie 0
-genoviasprincesses 0
+genoviasprincesses 1
 genowontmakeit. 0
 TheWestIsOursNotFreos 0
 TheWestIsTheCoast 0
 TheWestMinsterUnionistRoadShow 1
-TheWestWillTakeOverChina 0
+TheWestWillTakeOverChina 1
 gensfanseverywhere 0
 TheWestchester's 0
 TheWesternConference 1
@@ -23,7 +23,7 @@ gentbenparidafentcosesbenparides 0
 gentecabreada 0
 gentecheseguitevoi 0
 gentelemenpreferplastic 1
-TheWesternSenators 0
+TheWesternSenators 1
 gentemuybuenamuybuenagente 0
 gentequenosabedefutbol 1
 gentileisreverendal 0
@@ -110,7 +110,7 @@ TheWholeBloodyAffair 0
 geocaching”#N##N#This 0
 TheWholeDAMShow 0
 TheWholeHomeDepot 0
-geoengineeredweather 0
+geoengineeredweather 1
 TheWholeNineBards 0
 geoengineering#Chemtrails#Haarp#GMO#HXA 0
 geoengineering&lt;-- 0
@@ -136,8 +136,8 @@ geographybymatthew 0
 geographyfordummys 0
 TheWholeWorldIsWaiting 0
 TheWholeWorldIsWatching. 0
-geographyisdifficult 0
-geographyisimportant 0
+geographyisdifficult 1
+geographyisimportant 1
 geographyisnotyourstrongpoint 0
 TheWholeWorldNeedsBeaMiller” 0
 geographylessonplease 0
@@ -183,7 +183,7 @@ geordiefortheday 0
 geordiegirlsdrinkmore 0
 geordieinthecity 0
 geordierugbygirlsontour 0
-geordiesarethefriendliest 0
+geordiesarethefriendliest 1
 geordieshore4example 0
 geordieshorerepeats 0
 geordieshoreseries10 0
@@ -748,7 +748,7 @@ getYOURhouseholdinorder 0
 getYaHustleOn 0
 getYoFactsStraight 0
 getYoShitTgtNic 0
-TheWorldIsAFamily 0
+TheWorldIsAFamily 1
 getYouOne 0
 getYourArseOffTheBed 0
 getYourArsesIntoGear 0
@@ -820,15 +820,15 @@ getabrainloser 0
 getabrainmoron 0
 getabrainsanya 0
 TheWorldIsOutside 0
-TheWorldIsProbablyEndingSoon” 0
+TheWorldIsProbablyEndingSoon” 1
 getabungeechord 0
-TheWorldIsRight 0
+TheWorldIsRight 1
 getacareerandthenletsttalk 0
 getacaretakernotaholiday 0
 TheWorldIsRightAgain 0
 getachildtodoyourjob 0
 getachuteplease 0
-TheWorldIsScaryandAwful 0
+TheWorldIsScaryandAwful 1
 TheWorldIsSoLuckyToHaveYou 0
 getacluebenjamin 0
 getaclueblue 0
@@ -960,7 +960,7 @@ getalifedude😆 0
 getalifefridays 0
 TheWorldThanksYouBrandon 0
 getalifejess 0
-TheWorldThisWeek 0
+TheWorldThisWeek 1
 TheWorldThroughTheEyeOfASpliff 0
 getalifenerdslmao 0
 getalifenotsomeoneelses 0
@@ -1048,7 +1048,7 @@ getanightguard..so 0
 getanightlightyoubigweenie 0
 getanightnurse 0
 TheWorldsNotRightKamalsUpEarly 0
-TheWorldsPrettiestDog 0
+TheWorldsPrettiestDog 1
 getaniphonealready 0
 getaniqorborrow1foraday 0
 getannewolfeback 0
@@ -1087,7 +1087,7 @@ getaprioritymembership 0
 getapronunciationkey 0
 TheWorldsYourOyster 0
 TheWorldthanksyou 0
-TheWorldwideFollower 0
+TheWorldwideFollower 1
 getarealbestfriend 0
 getarealfirstbaseman 0
 getarealgovernment 0
@@ -1135,7 +1135,7 @@ TheWorstCommentatorEVER 1
 getathesauruswvfdw 0
 getathinbruh 0
 getatissue!!!!! 0
-TheWorstConversationStarter 0
+TheWorstConversationStarter 1
 getatiyaonkleinfeld 0
 getatlanticonvirgin 0
 TheWorstFederalAgentOnTelevision.” 0
@@ -2594,7 +2594,7 @@ getlikeNesha 0
 getlikebrucelee 0
 getlikechris2015 0
 getlikejae”sammeeeeee 0
-ThebBestDefenseIsAGoodOffense 0
+ThebBestDefenseIsAGoodOffense 1
 getlikeme... 0
 getlikemebruh 0
 getlikemecca”👀in 0
@@ -2968,7 +2968,7 @@ getmoving2015 0
 getmrouttahere 0
 getmstaylordeported2k15 0
 getmumpummelled 0
-ThebrickCityShow” 1
+ThebrickCityShow” 0
 getmurphyhome#opertionfindmurphy 0
 getmusclee 0
 getmyAgameon 0
