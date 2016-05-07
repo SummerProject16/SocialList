@@ -7,7 +7,7 @@ i=0
 for data in datasets:
     print i
     data1=data.split(" ")
-    if i<10000 and (data1[1] == '1' or data1[1] == '2'):
+    if i<9999 and (data1[1] == '1' or data1[1] == '2'):
         segData.append(" ".join(ws.segment(data1[0])))
     i+=1
 print "done"
