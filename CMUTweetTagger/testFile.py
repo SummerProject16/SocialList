@@ -1,20 +1,36 @@
 import wordsegment as ws
-import CMUTweetTagger as ctt
-file=open("../label_idiom.txt","r");
-datasets=file.read().split('\n')
-segData=[]
-i=0
-for data in datasets:
-    print i
-    data1=data.split(" ")
-    if i<9988 and (data1[1] == '1' or data1[1] == '2'):
-        segData.append(" ".join(ws.segment(data1[0])))
-    i+=1
-print "done"
-Tags=ctt.runtagger_parse(segData)
-i=0
-for x in Tags:
-    if 1 :
-        print x, i
-        print segData[i]
-    i+=1
+import searchWeb
+
+file = open('../label_idiom.txt')
+
+idiomsEx = file.readlines()
+
+sociallists = []
+
+for lines in idiomsEx:
+    idiomset = lines.split()
+    if idiomset[1] == '1':
+        sociallists.append(idiomset[0])
+
+parsedSociallists = []
+
+for line in sociallists:
+    parsedSociallists.append(" ".join(ws.segment(line)))
+
+for line in parsedSociallists:
+    googledata = searchWeb.searchgoogle(line)
+    count = 0
+    i = 1
+    for site in googledata:
+        try:
+            if searchWeb.searchforstring(site,line):
+                count+=1
+        except:
+            print "Network Failed"
+        i += 1
+        if i>10:
+            break
+    if count > 5:
+        print line + " True"
+    else:
+        print line+" False"
