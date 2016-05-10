@@ -3031,7 +3031,7 @@ getneoutofhere 0
 getnerdyinthedesert 0
 Thechequebookone 0
 Thechimichangasarereal 0
-Thechocolatepromise 2
+Thechocolatepromise 1
 getnewcommentator 0
 getnewmaterialbish 0
 ThechurchneedsYOU 0
@@ -3326,7 +3326,7 @@ getonthebandwaggon 0
 Thedressisblueandblack 0
 getonthebigwater 0
 getonthebikegirl 0
-Thedrinkingstagebeginsagain!! 2
+Thedrinkingstagebeginsagain!! 0
 getontheboy 0
 getonthebus...@TigerTigerTav 0
 getonthebusbitch! 0
@@ -6166,7 +6166,7 @@ getyourdirtyhandsofmyseat 0
 getyourdogtested 0
 getyourdonnaysout 0
 getyourdreamon 0
-getyourdreamstogether 2
+getyourdreamstogether 1
 Thenewone 0
 getyourdràmon 0
 getyourdusterout 0
