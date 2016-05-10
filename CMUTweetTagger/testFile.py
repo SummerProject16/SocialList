@@ -26,7 +26,7 @@ for line in parsedSociallists:
             if searchWeb.searchforstring(site,line):
                 count+=1
         except:
-            print "Network Failed"
+            print "Network Failed for "+site
         i += 1
         if i>10:
             break
