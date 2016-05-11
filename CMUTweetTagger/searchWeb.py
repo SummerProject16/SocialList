@@ -1,5 +1,6 @@
 import re
 import urllib2 as ulib
+import os
 
 
 def searchgoogle(text):
@@ -18,6 +19,8 @@ def searchgoogle(text):
     return retdata
 
 def searchforstring(url,string):
+    os.environ['http_proxy']="http://10.3.100.207:8080"
+    os.environ['https_proxy']="https://10.3.100.207:8080"
     proxy = ulib.ProxyHandler({'http': "http://10.3.100.207:8080",'https': "https://10.3.100.207:8080"})
     opener = ulib.build_opener(proxy)
     ulib.install_opener(opener)
