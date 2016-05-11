@@ -25,7 +25,7 @@ def searchforstring(url,stringlist):
     dumpdata=ulib.urlopen(req)
     dump = dumpdata.read()
     for string in stringlist:
-        if string in dump:
+        if string.lower() in dump.lower():
             continue
         else:
             return False

@@ -20,6 +20,7 @@ for line in sociallists:
 
 postags = cmu.runtagger_parse(parsedSociallists)
 j = 0
+urlsfile = open("urls.txt","w")
 for line in parsedSociallists:
     nounpart = []
     k = 0
@@ -28,7 +29,14 @@ for line in parsedSociallists:
         if (x is 'M' or x is '^' or x is 'Z'):
             nounpart.append(splitline[k])
         k += 1
-    googledata = searchWeb.searchgoogle(line)
+    while True:
+        try:
+            googledata = searchWeb.searchgoogle(line)
+            break
+        except:
+            print "Connection reset Please verify"
+            continue
+    urlsfile.write(line+"\n"+str(googledata)+"\n")
     count = 0
     print "Noun "+" ".join(nounpart)
     if " ".join(nounpart) == "":
