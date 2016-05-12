@@ -23,6 +23,7 @@ for line in postags:
         stags+=1
     elif ('$' in postagsent) and idiomset[1] == '0':
         itags+=1
+        print parsedSociallists[i]
     i+=1
 
 print "Probablity of Social Lists containing numbers is ",str(stags)+'/'+str(scount),str(float(stags)/scount)
