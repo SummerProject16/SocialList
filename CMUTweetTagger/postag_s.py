@@ -7,4 +7,4 @@ for line in idiomsEx:
     if(line[1]=="1"):
         a = segment(line[0])
         a = pos_tag(a)
-        print a
+        print a 
