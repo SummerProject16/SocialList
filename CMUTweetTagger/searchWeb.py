@@ -30,3 +30,4 @@ def searchforstring(url,string):
         return True
     else:
         return False
+
