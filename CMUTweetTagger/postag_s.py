@@ -1,3 +1,4 @@
+#parts of speech tagger for social list
 from wordsegment import segment
 from nltk import pos_tag, word_tokenize
 file = open('../label_idiom.txt')

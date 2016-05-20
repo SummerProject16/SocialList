@@ -1,3 +1,4 @@
+#Entropy of line
 import math
 from sets import Set
 from nltk import pos_tag, word_tokenize
