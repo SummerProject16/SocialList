@@ -1,0 +1,10 @@
+porterstemmeer - install on your systems
+
+###
+K lists - anirudh
+base form - anirudh
+postags arff files - madhu sai
+precision@ 5,10,20 - madhu sai
+closely related and distinguable urls - mkdadi
+checking if k of a k numbered idiom's urls consist same k - mkdadi (sir told through call)
+imdb 10000 movies list checking - mkdadi (sir told through call)

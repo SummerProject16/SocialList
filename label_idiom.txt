@@ -5688,7 +5688,7 @@ getvillaanewjob 0
 getvirtuallegs 0
 ThenAgainSoDoesNYC 0
 ThenAndNow#N#http:\/\/t.co\/VIjZqKCa4j” 0
-ThenAndNow (HunterAcheron)  0
+ThenAndNow(HunterAcheron)  0
 getweakshitouthere 0
 ThenBeReadyForTheFire 0
 getweellsoon 0
@@ -8759,7 +8759,7 @@ giveawayshelpcontest 0
 TheseStepsAreAKiller 0
 TheseTakesSoHot 0
 TheseTeachersCare&lt;3 0
-giveaway #whitesilk #comp 0
+giveaway#whitesilk#comp 0
 TheseThingsCount! 0
 TheseThingsJustGoRightThroughMe 0
 TheseThotsCouldntStripAnyway 0
