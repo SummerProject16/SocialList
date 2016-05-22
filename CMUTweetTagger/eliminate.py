@@ -4,7 +4,7 @@ prefix = ''
 suffix = ' f'
 suffix1 = ' 0'
 with open('../final_idiom_29k.txt', 'r') as src:
-    with open('../final_eliminated', 'w') as dest:
+    with open('../', 'w') as dest:
        for line in src:
            seg_line = wordsegment.segment(line)
            if("you" in seg_line):
