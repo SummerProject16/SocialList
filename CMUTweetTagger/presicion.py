@@ -1,3 +1,4 @@
+#program to find the prescion of search results in google
 import re
 import urllib2 as ulib
 import os

@@ -1,3 +1,4 @@
+#program to check if how many results differ by k
 import re
 import urllib2 as ulib
 import os
@@ -7,7 +8,7 @@ from wordsegment import segment
 from searchWeb import searchgoogle
 from collections import Counter
 
-
+#searching in google
 def k_list_repeat(query):
     k = searchgoogle(query)
     seg = segment(query)
@@ -30,6 +31,7 @@ def k_list_repeat(query):
         # print k[i]
         try:
             content = ulib.urlopen(req)
+            #reading the title of url
             x = re.findall("<\S*?title\S*?>(.*?)<\S*?/\S*?title\S*?>", content.read())
             t = []
             for s in x:
@@ -57,3 +59,4 @@ for i in xrange(len(arr_contain_numbers)):
 li = Counter(arr_repeat)
 for x in li:
     print x,li[x]
+#prints the line and number of times it repeats
