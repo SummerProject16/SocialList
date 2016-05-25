@@ -32,5 +32,5 @@ def numberofWords():
 
 #To check number of words in tagtocheck
 def test2(tagtocheck):
-	x = tagtocheck.split(",")
+	x = tagtocheck.split()
 	print str(len(x))+",",

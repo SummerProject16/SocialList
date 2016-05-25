@@ -32,8 +32,6 @@ postags = cmu.runtagger_parse(parsedSociallists)
 #         print x
 
 for sociallist,ParsedTag,postag in zip(sociallists,parsedSociallists,postags):
-	print sociallist+",",
-
 	testFile1.test1(ParsedTag)
 	testFile2.test2(ParsedTag)
 	testFile4.test4(ParsedTag)
@@ -44,6 +42,7 @@ for sociallist,ParsedTag,postag in zip(sociallists,parsedSociallists,postags):
 	testFile9.test9(postag)
 	testFile10.test10(postag)
 	testFile11.pos_tag_entropy(sociallist)
+	testFile12.test12(sociallist)
 	testFile14.test14(ParsedTag,postag)
 
 	print ""
