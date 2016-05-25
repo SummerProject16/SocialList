@@ -1,19 +1,7 @@
-import CMUTweetTagger as cmu
-import wordsegment as ws
 
-def test7(idiomset,postags,scount):
-    i = 0
-    stags = 0
-    itags = 0
-    for line, idiom in zip(postags, idiomset):
-        postagsent = " ".join(line)
-        if ('A' in postagsent) and idiom[1] == '1':
-            stags += 1
-        elif ('A' in postagsent) and idiom[1] == '0':
-            itags += 1
-        i += 1
-
-    print "Probablity of Social Lists containing Adjectives is ", str(stags) + '/' + str(scount), str(
-        float(stags) / scount)
-    print "Probablity of Non-Social Lists containing Adjectives is ", str(itags) + '/' + str(i - scount), str(
-        float(itags) / (i - scount))
+def test7(postags):
+    postagsent = "".join(postags)
+    if ('A' in postagsent): #Presence of Adjective(A)
+        print "1"+",",
+    else:
+        print "0"+",",

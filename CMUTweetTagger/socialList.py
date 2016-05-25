@@ -1,46 +1,50 @@
-# import testFile1
-# import testFile2
-# import testFile3
-# import testFile4
-# import testFile5
-# import testFile6
-# import testFile7
-# import testFile8
-# import testFile9
-# import testFile10
-# import testFile11
-# import testFile12
-# import testFile14
+import testFile1
+import testFile2
+import testFile3
+import testFile4
+import testFile5
+import testFile6
+import testFile7
+import testFile8
+import testFile9
+import testFile10
+import testFile11
+import testFile12
+import testFile14
 import imdbCheck
 import CMUTweetTagger as cmu
 import wordsegment as ws
 
-filename = '../label_idiom.txt'
-
+filename = '../socialList.txt'
 file = open(filename)
 idiomsEx = file.readlines()
 sociallists = []
-scount = 0
 idiomset = []
-for lines in idiomsEx:
-    tempset = lines.split()
+for line in idiomsEx:
+    tempset = line.split()
     idiomset.append(tempset)
-    if tempset[1] != '2':
-        scount += 1
     sociallists.append(tempset[0])
 parsedSociallists = []
 for line in sociallists:
     parsedSociallists.append(" ".join(ws.segment(line)))
-#postags = cmu.runtagger_parse(parsedSociallists)
+postags = cmu.runtagger_parse(parsedSociallists)
 
-for x in parsedSociallists:
-     if imdbCheck.checkStringinMovies(x) == True:
-        print x
+# for x in parsedSociallists:
+#      if imdbCheck.checkStringinMovies(x) == True:
+#         print x
 
-# testFile5.test5(idiomset,postags,scount)
-# testFile6.test6(idiomset,postags,scount)
-# testFile7.test7(idiomset,postags,scount)
-# testFile8.test8(idiomset,postags,scount)
-# testFile9.test9(idiomset,postags,scount)
-# testFile10.test10(idiomset,postags,scount)
-# testFile14.test14(postags,parsedSociallists)
+for sociallist,ParsedTag,postag in zip(sociallists,parsedSociallists,postags):
+	print sociallist+",",
+
+	testFile1.test1(ParsedTag)
+	testFile2.test2(ParsedTag)
+	testFile4.test4(ParsedTag)
+	testFile5.test5(postag)
+	testFile6.test6(postag)
+	testFile7.test7(postag)
+	testFile8.test8(postag)
+	testFile9.test9(postag)
+	testFile10.test10(postag)
+	testFile14.test14(ParsedTag,postag)
+
+	print ""
