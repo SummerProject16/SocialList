@@ -45,7 +45,7 @@ for sociallist,ParsedTag,postag in zip(sociallists,parsedSociallists,postags):
 	testFile8.test8(postag)
 	testFile9.test9(postag)
 	testFile10.test10(postag)
-	testFile11.test11(sociallist)
+	testFile11.pos_tag_entropy(sociallist)
 	testFile14.test14(ParsedTag,postag)
 
 	print ""
