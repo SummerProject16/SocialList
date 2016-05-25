@@ -40,18 +40,17 @@ def precisioncalc(query):
             total = total + 1
         except:
             pass
-        if (total == 5):
-            print  str(counter)+"/"+str(total),
+
         if (total == 10):
             print str(counter)+"/"+str(total),
         if (total == 20):
             print str(counter)+"/"+str(total),
 
-    if total < 5:
-        print str(counter)+"/"+str(5), str(counter)+"/"+str(10), str(counter)+"/"+str(20)
-    elif total < 10:
+
+    if total < 10:
         print str(counter)+"/"+str(10), str(counter)+"/"+str(20)
     elif total < 20:
         print str(counter)+"/"+str(20)
     else:
         print ""
+precisioncalc("madhusai")
