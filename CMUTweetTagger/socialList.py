@@ -1,3 +1,5 @@
+from sys import argv
+
 import testFile1
 import testFile2
 import testFile3
@@ -15,15 +17,11 @@ import imdbCheck
 import CMUTweetTagger as cmu
 import wordsegment as ws
 
-filename = '../socialList.txt'
-file = open(filename)
+file = open(argv[1])
 idiomsEx = file.readlines()
 sociallists = []
-idiomset = []
 for line in idiomsEx:
-    tempset = line.split()
-    idiomset.append(tempset)
-    sociallists.append(tempset[0])
+    sociallists.append(line.replace("\n",""))
 parsedSociallists = []
 for line in sociallists:
     parsedSociallists.append(" ".join(ws.segment(line)))
