@@ -9,7 +9,6 @@
 @ATTRIBUTE presence_of_adverb {0,1}
 @ATTRIBUTE presence_of_pronouns {0,1}
 @ATTRIBUTE pos_tag_entropy real
-@ATTRIBUTE ratio_of_non_english_to_english_words real
 @ATTRIBUTE search_results_titles {0,1}
 @ATTRIBUTE class {0,1}
 @DATA

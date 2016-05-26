@@ -1,7 +1,8 @@
+from collections import Counter
 
 def test6(postags):
     postagsent = "".join(postags)
-    if (('N' in postagsent) or ('^' in postagsent)): #Presence of Common Noun(N) or Proper Noun(^)
-        print "1"+",",
-    else:
-        print "0"+",",
+    count = Counter(postagsent)
+    if count['N']+count['^'] == 0:
+	    return "0"
+    return count['N']+count['^']

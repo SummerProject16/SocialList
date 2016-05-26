@@ -52,8 +52,7 @@ def test14(parsedTag,postag):
 		k+= 1
 
 	if " ".join(nounpart) == "":
-		print " ".join(nounpart)+"2",
-		return
+		return 2
 	while True:
 		try:
 			googledata = searchWeb.searchgoogle(parsedTag)
@@ -73,6 +72,6 @@ def test14(parsedTag,postag):
 		if i > 10:
 			break
 	if count > 5:
-		print "1",
+		return 1
 	else:
-		print "0",
+		return 0

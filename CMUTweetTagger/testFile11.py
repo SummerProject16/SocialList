@@ -19,5 +19,5 @@ def pos_tag_entropy(tagtocheck):
     for j in freq_list:
         ent = ent + j * math.log(j, 2)
     ent = -ent
-    print str(float(ent))+",",
+    return "%.4f"%(float(ent))
 #end of function--

@@ -1,7 +1,8 @@
+from collections import Counter
 
 def test8(postags):
     postagsent = "".join(postags)
-    if ('V' in postagsent): #Presence of verb
-        print "1"+",",
-    else:
-        print "0"+",",
+    count = Counter(postagsent)
+    if count['V'] == 0:
+	    return "0"
+    return count['V']

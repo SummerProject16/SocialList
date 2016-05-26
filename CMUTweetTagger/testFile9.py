@@ -2,6 +2,6 @@
 def test9(postags):
     postagsent = "".join(postags)
     if ('R' in postagsent): #Presence of Adverb(R)
-        print "1"+",",
+        return 1
     else:
-        print "0"+",",
+        return 0

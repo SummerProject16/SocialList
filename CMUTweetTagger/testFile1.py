@@ -18,4 +18,4 @@ def strlength(tagtocheck):
 			print "%s -- %d" %(f1[0], a)#line " -- " a
 
 def test1(tagtocheck):
-	print str(len(tagtocheck))+",",
+	return str(len(tagtocheck))

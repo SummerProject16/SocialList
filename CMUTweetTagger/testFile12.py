@@ -12,6 +12,6 @@ def test12(tagtocheck):
 		else:
 			correct+=1
 	if correct!= 0:
-		print str(float(incorrect)/correct) +",",
+		return "%.4f"%(float(incorrect)/correct)
 	else:
-		print "0,",
+		return 0

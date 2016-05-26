@@ -18,6 +18,7 @@ import CMUTweetTagger as cmu
 import wordsegment as ws
 
 file = open(argv[1])
+tofile = open(argv[2],"w")
 idiomsEx = file.readlines()
 sociallists = []
 for line in idiomsEx:
@@ -32,17 +33,16 @@ postags = cmu.runtagger_parse(parsedSociallists)
 #         print x
 
 for sociallist,ParsedTag,postag in zip(sociallists,parsedSociallists,postags):
-	testFile1.test1(ParsedTag)
-	testFile2.test2(ParsedTag)
-	testFile4.test4(ParsedTag)
-	testFile5.test5(postag)
-	testFile6.test6(postag)
-	testFile7.test7(postag)
-	testFile8.test8(postag)
-	testFile9.test9(postag)
-	testFile10.test10(postag)
-	testFile11.pos_tag_entropy(sociallist)
-	testFile12.test12(sociallist)
-	testFile14.test14(ParsedTag,postag)
 
-	print ""
+	tofile.write(str(testFile1.test1(ParsedTag))+","+
+	str(testFile2.test2(ParsedTag))+","+
+	str(testFile4.test4(ParsedTag))+","+
+	str(testFile5.test5(postag))+","+
+	str(testFile6.test6(postag))+","+
+	str(testFile7.test7(postag))+","+
+	str(testFile8.test8(postag))+","+
+	str(testFile9.test9(postag))+","+
+	str(testFile10.test10(postag))+","+
+	str(testFile11.pos_tag_entropy(sociallist))+","+
+	str(testFile12.test12(sociallist))+","+
+	str(testFile14.test14(ParsedTag,postag))+"\n")
