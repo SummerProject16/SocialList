@@ -5,3 +5,5 @@ local/
 bin/
 include/
 lib/
+weka/
+tweet1lk.txt

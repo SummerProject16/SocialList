@@ -1,0 +1,23 @@
+in k words
+k words to
+
+^reasons
+k reasons
+
+how to
+
+ways to
+k ways to
+
+things to
+k things to
+^things
+
+describe.*?in.*?
+
+Sentences containing successive Adjective and Plural form of Common nouns.
+
+What is
+what are
+
+^name some
