@@ -24,7 +24,7 @@ def searchforstring(url,string):
     proxy = ulib.ProxyHandler({'http': "http://10.3.100.207:8080",'https': "https://10.3.100.207:8080"})
     opener = ulib.build_opener(proxy)
     ulib.install_opener(opener)
-    req = ulib.Request(url, headers={'User-Agent' : "Mozilla/5.0"})
+    req = ulib.Request(url, headers={'User-Agent' : "Mozilla/5.0 (X11; U; Linux i686) Gecko/20071127 Firefox/2.0.0.11"})
     dumpdata=ulib.urlopen(req)
     if string in dumpdata.read():
         return True
