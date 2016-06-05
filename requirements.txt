@@ -3,3 +3,4 @@ pyenchant
 stemming
 wordsegment
 CMUTweetTagger
+inflect
