@@ -21,3 +21,11 @@
       * Checking for K Lists and Urls in Tweets : [CMUTweetTagger/TweetCheck.py](http://github.com/SummerProject16/project/blob/master/CMUTweetTagger/TweetCheck.py)
       * Checking for Categories in Tweets : [CMUTweetTagger/Category.py](http://github.com/SummerProject16/project/blob/master/CMUTweetTagger/Category.py)
       * Checking for presence of plural Common Nouns in Tweets : [CMUTweetTagger/plurals.py](http://github.com/SummerProject16/project/blob/master/CMUTweetTagger/plurals.py)
+
+  * ## **Example Commands**
+        
+        First of all commands must be run in virtual environment  
+
+        After generating there arff files they must be merged and attributes must be noted.
+      * Run Main File : `python socialList1.py finallist.txt finaltype.txt finallist.arff`
+      * Create a websearch file : `python socialList.py finallist.txt weblist.arff`
