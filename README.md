@@ -29,3 +29,4 @@
         After generating there arff files they must be merged and attributes must be noted.
       * Run Main File : `python socialList1.py finallist.txt finaltype.txt finallist.arff`
       * Create a websearch file : `python socialList.py finallist.txt weblist.arff`
+	  *	Joining both Arff files : `python combineArff.py finallist.arff weblist.arff socialList.arff`
