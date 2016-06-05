@@ -59,4 +59,4 @@ def getTweetsandUrls(hashtag,tweetsFilename):
 	processedTweetsandUrls.append(processedUrls)
 	return processedTweetsandUrls
 
-print getTweetsandUrls("askdirectioner","tweetsorganized2.txt")
+#print getTweetsandUrls("askdirectioner","tweetsorganized2.txt")
