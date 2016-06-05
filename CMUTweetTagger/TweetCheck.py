@@ -1,6 +1,6 @@
 import CMUTweetTagger as cmu
 import wordsegment
-import searchWeb
+import urllib2 as ulib
 
 def checkTweetNums(tweets,minTweets):
 	#number as adjective check
@@ -9,10 +9,10 @@ def checkTweetNums(tweets,minTweets):
 	for line in tweets:
 		processedtweets.append(" ".join(wordsegment.segment(line)))
 	postags = cmu.runtagger_parse(processedtweets)
-	print processedtweets
 	for postag in postags:
 		postag = "".join(postag)
 		if "$N" in postag or "$^" in postag or "$M" in postag or "$Z" in postag:
+			#Checking for Consecutive numbers and Nouns
 			count += 1
 	if count >= minTweets:
 		return 1
@@ -23,7 +23,14 @@ def checkTweetUrls(hashtag,urls,minUrls):
 	#check urls for hashtag matching
 	count = 0
 	for url in urls:
-		if searchWeb.searchforstring(url,wordsegment.segment(hashtag)):
+		proxy = ulib.ProxyHandler({'http': "http://10.3.100.207:8080",'https': "https://10.3.100.207:8080"})
+		opener = ulib.build_opener(proxy)
+		ulib.install_opener(opener)
+		req = ulib.Request(url, headers={'User-Agent' : "Mozilla/5.0"})
+		#Getting data from the url
+		dumpdata=ulib.urlopen(req)
+		dump = dumpdata.read()
+		if True: #Will include Jaccard here for match %
 			count+=1
 	#TODO
 	if count >= minUrls:

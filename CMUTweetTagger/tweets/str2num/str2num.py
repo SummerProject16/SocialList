@@ -16,7 +16,7 @@ wordinnum = {'zero': 0, 'one': 1, 'two': 2, 'three': 3, 'four': 4, 'five': 5,
              'crore': 10000000, 'crores': 10000000,
              'billion': 1000000000, 'billions': 1000000000,
              'trillion': 1000000000000, 'trillions': 1000000000000,
-             'and': 0, '&': 0}
+             }
 
 
 def str2num(string="zero"):
@@ -24,15 +24,28 @@ def str2num(string="zero"):
 		split_string = string.lower().split()
 		cleaned_string = []
 		for x in split_string:
+			#Checking for strings only in wordinnum list
+			if x == "and" or x == "&":
+				x = "zero"
 			if x in wordinnum:
 				if 's' == x[len(x) - 1]:
 					x = x[:-1]
+					#removing trailing s in number words like 's' in 'lacs'
+			else:
+				raise
 			if x == "lakh":
 				x = "lac"
 			cleaned_string.append(x)
 
 		value = 0
 		max_mark = 0
+
+		'''
+		this goes on a recursive basis, if there is a trillion in the string
+		all the words before trillion are computed using the same function recursively
+		then multiplied by trillion. Same goes for all the marks below.
+		'''
+
 		trillion_mark = len(cleaned_string)-1 - cleaned_string[::-1].index('trillion') \
 			if 'trillion' in cleaned_string else -1
 		if max_mark < trillion_mark: max_mark = trillion_mark
@@ -56,7 +69,10 @@ def str2num(string="zero"):
 
 		if trillion_mark != -1:
 			value += str2num(" ".join(cleaned_string[:trillion_mark]))*1000000000000
+			#Computing words before trillion and multiplying by trillion
 			value += str2num(" ".join(cleaned_string[trillion_mark+1:]))
+			#Adding value of words after trillion
+			#Similarly for all
 		else:
 			if billion_mark != -1:
 				value += str2num(" ".join(cleaned_string[:billion_mark]))*1000000000
@@ -91,19 +107,23 @@ def str2num(string="zero"):
 
 
 def cnvtwordstr2numstr(string=""):
+	#coverts a string containing numbers as words to numbered string
 	if len(string) == 0: return ""
 	start_index = 0
 	string_split = string.lower().split()
 	for x in string_split:
 		if x not in wordinnum:
-			start_index += 1
+			start_index += 1 #checks where the numbered words start
 		else:
 			break
 	if start_index >= len(string_split): return string
 	end_index = start_index
 	for index in xrange(start_index+1,len(string_split)):
 		if string_split[index] in wordinnum:
-			end_index += 1
+			end_index += 1 # checks where the numbered words end
+		elif string_split[index] == "and" or string_split[index] == "&":
+			if index+1 < len(string_split) and string_split[index+1] in wordinnum:
+				end_index += 1
 		else:
 			break
 	return " ".join(string_split[:start_index]) + " " + \
@@ -112,6 +132,7 @@ def cnvtwordstr2numstr(string=""):
 
 
 def cnvtnum2str(string="Test case 1"):
+	#converts numbers in string to words
 	split_string = string.split()
 	final_string =[]
 	for x in split_string:
@@ -122,13 +143,19 @@ def cnvtnum2str(string="Test case 1"):
 	return " ".join(final_string)
 
 
+def words2num(string="Enter some number like 2 thousand 30"):
+	'''
+	First converts the string with numbers and numbered words to strings with numbers as pure words.
+	Then converts the string thus obtained into a string with only numbers in decimal form
+	:param string: String witth numbers in decimal and as words
+	:return: String with numbers in decimal
+	'''
+	return cnvtwordstr2numstr(cnvtnum2str(string))
+
+
 def test():
 	print str2num("one thousand five hundred and forty six")
 	print cnvtwordstr2numstr("I have One lac eighty five thousand ninety six rupees")
-	print words2num("Hello 1 billion 2 hundred & 10 million people")
+	print words2num("Hello to you and 1 billion 2 hundred & 10 million and more people")
 
-
-def words2num(string="Enter some number like 2 thousand 30"):
-	return cnvtwordstr2numstr(cnvtnum2str(string))
-
-test()
+#test() #If you want to test if its working remove the ash at the beginning of this line and run
