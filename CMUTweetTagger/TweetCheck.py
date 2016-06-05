@@ -38,4 +38,4 @@ def checkTweetUrls(hashtag,urls,minUrls):
 	else:
 		return 0
 
-print checkTweetUrls("5waystoruindate",['http://www.glamour.com/story/5-words-that-will-ruin-a-date'],1)
+#print checkTweetUrls("5waystoruindate",['http://www.glamour.com/story/5-words-that-will-ruin-a-date'],1)

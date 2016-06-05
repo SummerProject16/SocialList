@@ -43,6 +43,7 @@ postags = cmu.runtagger_parse(parsedSociallists)
 #         print x
 
 for ParsedTag,postag,type in zip(parsedSociallists,postags,list_type):
+	checkTweetsret = checkTweets.checkTweets(ParsedTag.replace(" ",""))
 	tofile = open(argv[3],"a")
 	tofile.write(str(testFile1.test1(ParsedTag))+","+
 	str(testFile2.test2(ParsedTag))+","+
@@ -58,7 +59,7 @@ for ParsedTag,postag,type in zip(parsedSociallists,postags,list_type):
 	str(testFile10.test10(postag))+","+
 	str(testFile11.pos_tag_entropy(ParsedTag.replace(" ",""),postag))+","+
 	str(testFile12.test12(ParsedTag.replace(" ","")))+","+
-	str(checkTweets.checkTweets(ParsedTag.replace(" ","")))+","+
+	str(checkTweetsret[0])+","+str(checkTweetsret[1])+","+
 	str(Category.checkCategories(ParsedTag.replace(" ","")))+","+
 	str(plurals.containspluralNouns(ParsedTag,postag))+","+
 	str(type.replace("\n",""))+"\n")
