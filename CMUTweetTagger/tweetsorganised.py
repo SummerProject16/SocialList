@@ -19,6 +19,7 @@ def tweettypesearch(filename,tweet):
 				for i in xrange(1,len(tweets)):
 					actTweet=tweets[i].split("\t")[3]
 					if containsurl(actTweet) or containsnum(actTweet):
+						#Checking if the tweet contains either a number or a Url
 						count+=1
 				if count > 20:
 					return 1
