@@ -136,7 +136,7 @@ def cnvtnum2str(string="Test case 1"):
 	split_string = string.split()
 	final_string =[]
 	for x in split_string:
-		if re.match("\d+", x):
+		if re.match("\d+\s", x):
 			x = num2words.num2words(int(x))
 			x = x.replace("-", " ").replace(",", "")
 		final_string.append(x)
