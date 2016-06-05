@@ -8,6 +8,7 @@
         stemming
         wordsegment
         CMUTweetTagger
+		inflect
 
   *	### **Files**  
 
@@ -18,3 +19,5 @@
       * Getting Tweets and Urls related to a hashtag : [CMUTweetTagger/hashtag.py](http://github.com/SummerProject16/project/blob/master/CMUTweetTagger/hashtag.py)  
       * Searching Google for a HashTag popularity : [CMUTweetTagger/searchWeb.py](http://github.com/SummerProject16/project/blob/master/CMUTweetTagger/searchWeb.py)  
       * Checking for K Lists and Urls in Tweets : [CMUTweetTagger/TweetCheck.py](http://github.com/SummerProject16/project/blob/master/CMUTweetTagger/TweetCheck.py)
+      * Checking for K Lists and Urls in Tweets : [CMUTweetTagger/Category.py](http://github.com/SummerProject16/project/blob/master/CMUTweetTagger/Category.py)
+      * Checking for K Lists and Urls in Tweets : [CMUTweetTagger/plurals.py](http://github.com/SummerProject16/project/blob/master/CMUTweetTagger/plurals.py)
