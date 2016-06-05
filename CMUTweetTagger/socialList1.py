@@ -56,7 +56,7 @@ for ParsedTag,postag,type in zip(parsedSociallists,postags,list_type):
 	str(testFile8.test8(postag))+","+
 	str(testFile9.test9(postag))+","+
 	str(testFile10.test10(postag))+","+
-	str(testFile11.pos_tag_entropy(ParsedTag.replace(" ","")))+","+
+	str(testFile11.pos_tag_entropy(ParsedTag.replace(" ",""),postag))+","+
 	str(testFile12.test12(ParsedTag.replace(" ","")))+","+
 	str(checkTweets.checkTweets(ParsedTag.replace(" ","")))+","+
 	str(Category.checkCategories(ParsedTag.replace(" ","")))+","+
