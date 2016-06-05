@@ -1,16 +1,14 @@
 import math
-from nltk import pos_tag
 from wordsegment import segment
 from collections import Counter
 
-def pos_tag_entropy(tagtocheck):
+def pos_tag_entropy(tagtocheck,pos_list):
     seg_st = segment(tagtocheck)
-    pos_list=  pos_tag(seg_st)
     len_list=len(pos_list)
     arr = []
     freq_list =[]
     for i in xrange(len_list):
-        arr.append(pos_list[i][1])
+        arr.append(pos_list[i])
     k = Counter(arr) #counts no of pos tags and their multiplicity
     for x in k:
         freq = float(k[x])/len_list
