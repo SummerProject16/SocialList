@@ -17,8 +17,8 @@ def checkCategories(hashtag):
 	matches.append(re.match("^describe.*?in.*?",hashtag))
 	matches.append(re.match("^name\ssome.+?",hashtag))
 	#Add new catogories if found any
-	for x in matches:
-		if x:
+	for match in matches:
+		if match:
 			return 1
 	return 0
 

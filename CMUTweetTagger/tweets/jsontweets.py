@@ -1,6 +1,12 @@
 import json
 import codecs
 
+
+'''
+For parsing the data from twitter json format output
+'''
+
+
 def jsoncheck(file1):
 	file2 = codecs.open(file1 + ".txt",encoding="utf8")
 	fileout = codecs.open("socialListstweets.txt", "a",encoding="utf8")
