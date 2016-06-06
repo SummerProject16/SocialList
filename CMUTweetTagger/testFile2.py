@@ -1,3 +1,17 @@
+'''
+@file : Category.py
+@author (A) : Madhu Sai Ravada.
+@project : Social List
+
+@function :gives the number of words in a tag
+
+
+This work is licensed under the
+Creative Commons Attribution-NonCommercial-ShareAlike 4.0
+International License. To view a copy of this license,
+visit http://creativecommons.org/licenses/by-nc-sa/4.0/.
+'''
+'''
 import wordsegment as ws
 def numberofWords():
 	file = open('../label_idiom.txt')
@@ -12,8 +26,6 @@ def numberofWords():
 		if idiomset[1] == '0':
 			sociallists.append(idiomset[0])
 
-	print "Number of words in each scentence"
-	print "---------------------------------"
 	min = 10
 	max = 0
 	for line in sociallists:
@@ -29,7 +41,7 @@ def numberofWords():
 	print "------------------"
 	print "the average number of words in each line is " + str(float(m) / n), "min =", str(min), "max =", str(max)
 
-
+'''
 #To check number of words in tagtocheck
 def test2(tagtocheck):
 	x = tagtocheck.split()

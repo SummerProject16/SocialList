@@ -1,16 +1,4 @@
-'''
-@file : precision.py
-@author (A) : Madhusai Ravada.
-@project : Social List
-
-program to find the precision of search results in google
-
-This work is licensed under the
-Creative Commons Attribution-NonCommercial-ShareAlike 4.0
-International License. To view a copy of this license,
-visit http://creativecommons.org/licenses/by-nc-sa/4.0/.
-'''
-
+#program to check if how many results differ by k
 import re
 import urllib2 as ulib
 import os
@@ -18,20 +6,21 @@ from nltk import PorterStemmer
 import stemming.porter2
 from wordsegment import segment
 from searchWeb import searchgoogle
+from collections import Counter
 
-def precisioncalc(query):
-    print query,
+#searching in google
+def k_list_repeat(query):
     k = searchgoogle(query)
     seg = segment(query)
     m = []
+    new_list = []
     for n in seg:
         m.append(stemming.porter2.stem(n))
     seg = " ".join(m)
     proxy = ulib.ProxyHandler({'https': "https://10.3.100.207:8080", 'http': "http://10.3.100.207:8080"})
     opener = ulib.build_opener(proxy)
     ulib.install_opener(opener)
-    counter = 0
-    total = 0
+
     for i in xrange(len(k)):
         req = ulib.Request(k[i], headers={'User-Agent': "Mozilla/5.0"})
         k[i] = segment(k[i])
@@ -42,28 +31,32 @@ def precisioncalc(query):
         # print k[i]
         try:
             content = ulib.urlopen(req)
+            #reading the title of url
             x = re.findall("<\S*?title\S*?>(.*?)<\S*?/\S*?title\S*?>", content.read())
             t = []
             for s in x:
                 t.append(stemming.porter2.stem(s))
             t = " ".join(t)
-            # print t
-            if ((seg in k[i]) or (seg in t)):
-                counter = counter + 1
-            total = total + 1
+            m.append(t)
+
         except:
             pass
+    return m
+arr_contain_numbers = []
+l = k_list_repeat("placesinindia")
 
-        if (total == 10):
-            print str(counter)+"/"+str(total),
-        if (total == 20):
-            print str(counter)+"/"+str(total),
+#print l
+for j in xrange(len(l)):
+    if(any(char.isdigit() for char in l[j])):
+        line_nonum = ''.join([i for i in l[j] if not i.isdigit()])
+        arr_contain_numbers.append(line_nonum)
 
+arr_repeat = []
+for i in xrange(len(arr_contain_numbers)):
+    k = arr_contain_numbers.count(arr_contain_numbers[i])
+    if(k>1):arr_repeat.append(arr_contain_numbers[i])
 
-    if total < 10:
-        print str(counter)+"/"+str(10), str(counter)+"/"+str(20)
-    elif total < 20:
-        print str(counter)+"/"+str(20)
-    else:
-        print ""
-#precisioncalc("madhusai") #uncomment this to check the presion of some word
+li = Counter(arr_repeat)
+for x in li:
+    print x,li[x]
+#prints the line and number of times it repeats

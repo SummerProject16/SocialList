@@ -1,0 +1,23 @@
+### Social Lists ###
+Avg no. of Nouns: 1.8507
+Avg no. of Pronouns: 0.1389
+Avg no. of Conjuctions: 0.0104
+Avg no. of Interjections: 0.0104
+Avg no. of Verbs: 0.5139
+Avg no. of Adjectives: 0.4844
+Avg no. of Adverbs: 0.1163
+Avg no. of Prepositions: 0.4931
+Avg length of string: 20.4167
+Avg length of word: 4.3767
+
+### Non Social Lists ###
+Avg no. of Nouns: 1.8214
+Avg no. of Pronouns: 0.2270
+Avg no. of Conjuctions: 0.0618
+Avg no. of Interjections: 0.0317
+Avg no. of Verbs: 0.7780
+Avg no. of Adjectives: 0.3122
+Avg no. of Adverbs: 0.1352
+Avg no. of Prepositions: 0.3356
+Avg length of string: 21.6377
+Avg length of word: 4.5659
