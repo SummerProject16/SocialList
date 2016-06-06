@@ -1,3 +1,17 @@
+'''
+@file : Category.py
+@author (A) : Madhu sai Ravada.
+@project : Social List
+
+returns the entropy of postags list of the hastag
+
+This work is licensed under the
+Creative Commons Attribution-NonCommercial-ShareAlike 4.0
+International License. To view a copy of this license,
+visit http://creativecommons.org/licenses/by-nc-sa/4.0/.
+'''
+
+
 import math
 from wordsegment import segment
 from collections import Counter

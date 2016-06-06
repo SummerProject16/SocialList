@@ -66,4 +66,4 @@ def precisioncalc(query):
         print str(counter)+"/"+str(20)
     else:
         print ""
-precisioncalc("madhusai")
+#precisioncalc("madhusai") #uncomment this to check the presion of some word

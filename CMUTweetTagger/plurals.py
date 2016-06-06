@@ -1,9 +1,10 @@
 '''
 @file : plurals.py
-@author (A) : Madhu Kumar Dadi.
+@author (A) : Madhu Sai Ravada
 @project : Social List
 
-
+@function :
+    :returns 1 if the hastag contains plural noun else returns 0
 
 This work is licensed under the
 Creative Commons Attribution-NonCommercial-ShareAlike 4.0
