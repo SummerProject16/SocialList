@@ -1,4 +1,16 @@
-#program to find the prescion of search results in google
+'''
+@file : precision.py
+@author (A) : Madhusai Ravada.
+@project : Social List
+
+program to find the precision of search results in google
+
+This work is licensed under the
+Creative Commons Attribution-NonCommercial-ShareAlike 4.0
+International License. To view a copy of this license,
+visit http://creativecommons.org/licenses/by-nc-sa/4.0/.
+'''
+
 import re
 import urllib2 as ulib
 import os
