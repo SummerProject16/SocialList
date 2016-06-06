@@ -22,11 +22,9 @@ def checkall(postags,parsedSociallists):
 				googledata = searchWeb.searchgoogle(line)
 				break
 			except:
-				#print "Connection reset Please verify"
 				continue
 		urlsfile.write(line+"\n"+str(googledata)+"\n")
 		count = 0
-		#print "Noun "+" ".join(nounpart)
 		if " ".join(nounpart) == "":
 			j+=1
 			print "2"
@@ -62,6 +60,7 @@ def test14(parsedTag,postag):
 	while True:
 		try:
 			googledata = searchWeb.searchgoogle(parsedTag)
+			#gets all the urls for the hashtag on google search
 			break
 		except:
 			continue
@@ -70,6 +69,7 @@ def test14(parsedTag,postag):
 	for site in googledata:
 		try:
 			if searchWeb.searchforstring(site,nounpart):
+				#checks if the hashtag noun parts are popular by counting the number of websites they are present
 				count += 1
 		except:
 			pass
@@ -100,6 +100,7 @@ def test14(parsedTag,postag):
 		try:
 			content = ulib.urlopen(req)
 			x = re.findall("<\S*?title\S*?>(.*?)<\S*?/\S*?title\S*?>", content.read())
+			#searches for a match of hastag in the title and url of every page
 			t = []
 			for s in x:
 				t.append(stemming.porter2.stem(s))
@@ -114,6 +115,7 @@ def test14(parsedTag,postag):
 			ret.append("%.4f"%(float(counter)/total))
 		if (total == 20):
 			ret.append("%.4f"%(float(counter)/total))
+			break
 
 	if total < 10:
 		ret.append("%.4f"%(float(counter)/10.0))
