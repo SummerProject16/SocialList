@@ -1,3 +1,25 @@
+'''
+@file : TweetCheck.py
+@author (A) : Madhu Kumar Dadi.
+@project : Social List
+@function :
+	checkTweetNums(tweets,minTweets) :    checks the presence of number as adjectives in the tweet
+		@tweets :   list of tweets that are to be checked for presence of number
+		@minTweets :    minimum number of tweets that are to be present to return 1
+		return :    0 if count is less than minTweets else 1
+@function :
+	checkTweetUrls(hashtag,urls,minUrls) :  checks the presence of hashtag in the Url Page
+		@hashtag :  hashtag to be searched
+		@urls : list of urls that are to be checked
+		@minUrls :   minimum number of urls that has to contain hashtag
+		return :    0 if count is less than minUrls else 1
+@Licence :
+	This work is licensed under the
+	Creative Commons Attribution-NonCommercial-ShareAlike 4.0
+	International License. To view a copy of this license,
+	visit http://creativecommons.org/licenses/by-nc-sa/4.0/.
+'''
+
 import CMUTweetTagger as cmu
 import wordsegment
 import urllib2 as ulib

@@ -1,10 +1,12 @@
 '''
-@file : precision.py
-@author (A) : Madhusai Ravada and Madhu Kumar Dadi.
+@file : testFile14.py
+@author (A) : Madhu Kumar Dadi.
 @project : Social List
-
-program to find the precision of search results in google
-
+@function :
+	test14(parsedTag,postag) :  Searches parsedTag on google for popularity and precision at 10 and 20 urls
+		@parsedTag :    hashtag that is searched on google
+		@postag :   pos tags of the parsedTag
+		return :    a list containing google search popularity and precision at 10 and 20 urls of the parsedTag
 This work is licensed under the
 Creative Commons Attribution-NonCommercial-ShareAlike 4.0
 International License. To view a copy of this license,
@@ -18,45 +20,45 @@ import urllib2 as ulib
 from wordsegment import segment
 import re
 
-def checkall(postags,parsedSociallists):
-	j = 0
-	urlsfile = open("urls.txt","w")
-	for line in parsedSociallists:
-		print line,
-		nounpart = []
-		k = 0
-		splitline = line.split()
-		for x in postags[j]:
-			if (x is 'M' or x is '^' or x is 'Z'):
-				nounpart.append(splitline[k])
-			k += 1
-		while True:
-			try:
-				googledata = searchWeb.searchgoogle(line)
-				break
-			except:
-				continue
-		urlsfile.write(line+"\n"+str(googledata)+"\n")
-		count = 0
-		if " ".join(nounpart) == "":
-			j+=1
-			print "2"
-			continue
-		i = 1
-		for site in googledata:
-			try:
-				if searchWeb.searchforstring(site,nounpart):
-					count += 1
-			except:
-				print "",
-			i += 1
-			if i > 10:
-				break
-		if count > 5:
-			print "1"
-		else:
-			print "0"
-		j += 1
+# def checkall(postags,parsedSociallists):
+# 	j = 0
+# 	urlsfile = open("urls.txt","w")
+# 	for line in parsedSociallists:
+# 		print line,
+# 		nounpart = []
+# 		k = 0
+# 		splitline = line.split()
+# 		for x in postags[j]:
+# 			if (x is 'M' or x is '^' or x is 'Z'):
+# 				nounpart.append(splitline[k])
+# 			k += 1
+# 		while True:
+# 			try:
+# 				googledata = searchWeb.searchgoogle(line)
+# 				break
+# 			except:
+# 				continue
+# 		urlsfile.write(line+"\n"+str(googledata)+"\n")
+# 		count = 0
+# 		if " ".join(nounpart) == "":
+# 			j+=1
+# 			print "2"
+# 			continue
+# 		i = 1
+# 		for site in googledata:
+# 			try:
+# 				if searchWeb.searchforstring(site,nounpart):
+# 					count += 1
+# 			except:
+# 				print "",
+# 			i += 1
+# 			if i > 10:
+# 				break
+# 		if count > 5:
+# 			print "1"
+# 		else:
+# 			print "0"
+# 		j += 1
 
 def test14(parsedTag,postag):
 	nounpart = []

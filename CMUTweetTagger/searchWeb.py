@@ -1,3 +1,23 @@
+'''
+@file : searchWeb.py
+@author (A) : Madhu Kumar Dadi.
+@project : Social List
+@function :
+	searchgoogle(text) : Searches google for the text
+		@text : the text that is to be searched
+		return :    a List containing urls from google search
+@function :
+	searchforstring(url,stringlist) :   searches for items in stringlist in the web page at url
+		@url :  Url where the strings are to be searched
+		@stringlist :   List of strings to be searched in the url
+		return :    returns True if all the items in stringlist are present in the web page at url else 0
+@Licence :
+	This work is licensed under the
+	Creative Commons Attribution-NonCommercial-ShareAlike 4.0
+	International License. To view a copy of this license,
+	visit http://creativecommons.org/licenses/by-nc-sa/4.0/.
+'''
+
 import re
 import urllib2 as ulib
 

@@ -1,14 +1,13 @@
 '''
-@file : matchTweets.py
+@file : hashtag.py
 @author (A) : Madhu Kumar Dadi.
 @project : Social List
-
-
-
-This work is licensed under the
-Creative Commons Attribution-NonCommercial-ShareAlike 4.0
-International License. To view a copy of this license,
-visit http://creativecommons.org/licenses/by-nc-sa/4.0/.
+@usage : checks presence of numbers in tweets in Big Data from tweets files, this is not used anywhere
+@Licence :
+	This work is licensed under the
+	Creative Commons Attribution-NonCommercial-ShareAlike 4.0
+	International License. To view a copy of this license,
+	visit http://creativecommons.org/licenses/by-nc-sa/4.0/.
 '''
 
 import CMUTweetTagger as cmu

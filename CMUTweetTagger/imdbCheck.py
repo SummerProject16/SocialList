@@ -2,13 +2,15 @@
 @file : imdbCheck.py
 @author (A) : Madhu Kumar Dadi.
 @project : Social List
-
-
-
-This work is licensed under the
-Creative Commons Attribution-NonCommercial-ShareAlike 4.0
-International License. To view a copy of this license,
-visit http://creativecommons.org/licenses/by-nc-sa/4.0/.
+@function :
+	checkStringinMovies(string) : checks for the string in the movies list
+		@string :   string to be checked if it contains a name in Movies list
+		return :    True if it contains a movie name else False
+@Licence :
+	This work is licensed under the
+	Creative Commons Attribution-NonCommercial-ShareAlike 4.0
+	International License. To view a copy of this license,
+	visit http://creativecommons.org/licenses/by-nc-sa/4.0/.
 '''
 
 def checkStringinMovies(string):
