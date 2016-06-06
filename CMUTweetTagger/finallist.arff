@@ -1,3 +1,27 @@
+@RELATION socialList
+@ATTRIBUTE char_length numeric
+@ATTRIBUTE number_of_words numeric
+@ATTRIBUTE presence_of_days {0,1}
+@ATTRIBUTE presence_of_numbers {0,1}
+@ATTRIBUTE presence_of_prepositions numeric
+@ATTRIBUTE presence_of_conjuctions numeric
+@ATTRIBUTE presence_of_interjections numeric
+@ATTRIBUTE presence_of_nouns numeric
+@ATTRIBUTE presence_of_adjectives numeric
+@ATTRIBUTE presence_of_verbs numeric
+@ATTRIBUTE presence_of_adverbs numeric
+@ATTRIBUTE presence_of_pronouns numeric
+@ATTRIBUTE pos_tag_entropy real
+@ATTRIBUTE ratio_of_non_english_to_english_words real
+@ATTRIBUTE number_check_in_tweets {0,1,2}
+@ATTRIBUTE url_check_in_tweets {0,1,2}
+@ATTRIBUTE check_for_categories {0,1}
+@ATTRIBUTE check_for_plural_common_nouns {0,1}
+@ATTRIBUTE popularity_on_google_search {0,1,2}
+@ATTRIBUTE precision_for_occurance_in_top_10_pages_of_google_search real
+@ATTRIBUTE precision_for_occurance_in_top_20_pages_of_google_search real
+@ATTRIBUTE class {0,1}
+@DATA
 22,4,0,0,0,0,0,2,0,1,0,1,1.5000,1.0000,2,2,0,0,1,0.2000,0.3000,1
 23,4,0,0,0,0,0,3,0,0,0,0,1.5000,1.0000,2,2,0,0,1,0.3000,0.5000,0
 21,5,0,0,0,0,0,3,0,0,0,0,1.5219,0.0000,2,2,0,0,0,0.1000,0.0500,0
