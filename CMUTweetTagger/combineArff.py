@@ -3,12 +3,14 @@
 @author (A) : Madhu Kumar Dadi.
 @project : Social List
 
+This script combines the arff files obtained from socialList.py and GoogleSearch.py
 
-
-This work is licensed under the
-Creative Commons Attribution-NonCommercial-ShareAlike 4.0
-International License. To view a copy of this license,
-visit http://creativecommons.org/licenses/by-nc-sa/4.0/.
+@Usage :    python combineArff.py socialList.arff GoogleSearch.arff
+@Licence :
+	This work is licensed under the
+	Creative Commons Attribution-NonCommercial-ShareAlike 4.0
+	International License. To view a copy of this license,
+	visit http://creativecommons.org/licenses/by-nc-sa/4.0/.
 '''
 
 from sys import argv

@@ -2,13 +2,16 @@
 @file : checkTweets.py
 @author (A) : Madhu Kumar Dadi.
 @project : Social List
-
-
-
-This work is licensed under the
-Creative Commons Attribution-NonCommercial-ShareAlike 4.0
-International License. To view a copy of this license,
-visit http://creativecommons.org/licenses/by-nc-sa/4.0/.
+@function :
+	checkTweets(tweet,tweetsFile) :  checks tweets containing tweet in the tweetsFile
+		@tweet :    hashtag to be checked
+		@tweetsFile :   File containing hashtags
+		return :    number validity and url validity from TweetCheck package and [2,2] if there are no tweets
+@Licence :
+	This work is licensed under the
+	Creative Commons Attribution-NonCommercial-ShareAlike 4.0
+	International License. To view a copy of this license,
+	visit http://creativecommons.org/licenses/by-nc-sa/4.0/.
 '''
 
 

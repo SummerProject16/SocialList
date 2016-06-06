@@ -1,48 +1,86 @@
 '''
 @file : socialList.py
-@author (A) : Madhusai Ravada.
+@author (A) : Madhu Kumar Dadi.
 @project : Social List
+@Usage :    python socialList.py finallist.txt finaltype.txt finallist.arff
 
+This script finds the values returned by the features listed as comments for each hashtag in the file
+finallist.txt and outputs the values in comma seperated format in the finallist.arff and the file finaltype.txt
+contains the class of the hashtag.
 
-
-This work is licensed under the
-Creative Commons Attribution-NonCommercial-ShareAlike 4.0
-International License. To view a copy of this license,
-visit http://creativecommons.org/licenses/by-nc-sa/4.0/.
+@Licence :
+	This work is licensed under the
+	Creative Commons Attribution-NonCommercial-ShareAlike 4.0
+	International License. To view a copy of this license,
+	visit http://creativecommons.org/licenses/by-nc-sa/4.0/.
 '''
 
 from sys import argv
 
-import testFile14
+import testFile1
+import testFile2
+import testFile4
+import testFile5
+import testFile6
+import testFile7
+import testFile8
+import testFile9
+import testFile10
+import testFile11
+import testFile12
+import checkTweets
 import CMUTweetTagger as cmu
 import wordsegment as ws
+import tweets.str2num.str2num as str2num
+import Category
+import plurals
 
-file = open(argv[1]) #file containing socialList and nonsocialList hashtags
-tofile = open(argv[2], "w") #file that takes the arff output
+
+'''
+Run this file as python socialList1.py <sociallists file> <socialListsType file> <output arff file>
+'''
+
+
+file = open(argv[1]) #file containing socialList and nonSocialList hashtags
+file_type = open(argv[2]) #file containing the types of hastags
+tofile = open(argv[3],"w") #file to take output arff
 tofile.close()
 idiomsEx = file.readlines()
-sociallists = []
+list_type = file_type.readlines()
+
+sociallists = [] # to take hashtags in a list
 
 for line in idiomsEx:
-	sociallists.append(line.replace("\n", ""))
+	sociallists.append(line.replace("\n",""))
 
-parsedSociallists = []
+parsedSociallists = [] #parse the hashtags using str2num library and add them as a list
 
 for line in sociallists:
-	parsedSociallists.append(" ".join(ws.segment(line)))
+	parsedSociallists.append(str2num.words2num(" ".join(ws.segment(line))))
 
-postags = cmu.runtagger_parse(parsedSociallists)
+postags = cmu.runtagger_parse(parsedSociallists) #gets a list of postags each for each hashtag
 
-'''
-file output would be in the format of popularity,precision at 10,precision at 20 in each line for every hashtag
+for ParsedTag,postag,type in zip(parsedSociallists,postags,list_type):
+	checkTweetsret = checkTweets.checkTweets(ParsedTag.replace(" ",""),"tweetsorganized1.txt")
+	#checks for the hashtag in the files provided.
 
-This takes a lot of time to run.
-'''
-
-for ParsedTag, postag in zip(parsedSociallists, postags):
-	tofile = open(argv[2], "a")
-	a = testFile14.test14(ParsedTag, postag)
-	#checks the hashtag in google and returns list of its popularity precision at 10 urls and 20 urls
-	print str(a[0]) + "," + str(a[1]) + "," + str(a[2])
-	tofile.write(str(a[0]) + "," + str(a[1]) + "," + str(a[2]) + "\n")
+	tofile = open(argv[3],"a")
+	tofile.write(str(testFile1.test1(ParsedTag))+","+ #number of charcters in hashtag
+	str(testFile2.test2(ParsedTag))+","+ #number of words in hashtag
+	str(testFile4.test4(ParsedTag))+","+ #presence of days
+	str(testFile5.numbercount(postag))+","+ # presence of numbers
+	str(testFile5.prepositioncount(postag))+","+ #presence of prepositions
+	str(testFile5.conjuctioncount(postag))+","+ #presence of conjuctions
+	str(testFile5.interjectioncount(postag))+","+ #presence of interjections
+	str(testFile6.test6(postag))+","+ #presence of nouns
+	str(testFile7.test7(postag))+","+ #presence of Adjectives
+	str(testFile8.test8(postag))+","+ #presence of verbs
+	str(testFile9.test9(postag))+","+ #presence of Adverbs
+	str(testFile10.test10(postag))+","+ #presence of pronouns
+	str(testFile11.pos_tag_entropy(ParsedTag.replace(" ",""),postag))+","+ #pos_tag entropy
+	str(testFile12.test12(ParsedTag.replace(" ","")))+","+ #ratio of non-english to english words
+	str(checkTweetsret[0])+","+str(checkTweetsret[1])+","+ #check for number and urls in tweets
+	str(Category.checkCategories(ParsedTag.replace(" ","")))+","+ #check for category match
+	str(plurals.containspluralNouns(ParsedTag,postag))+","+ #check if hashtag contains plural common noun
+	str(type.replace("\n",""))+"\n") #class of hashtag
 	tofile.close()
