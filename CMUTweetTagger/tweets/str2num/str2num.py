@@ -1,3 +1,30 @@
+'''
+@file : checkTweets.py
+@author (A) : Madhu Kumar Dadi.
+@project : Social List
+@function :
+	str2num(string) :   converts a pure number string into a number
+		@string :   number in words
+		return :    number in decimal
+@function :
+	cnvtwordstr2numstr(string) :    converts a string containing number in words to the string with numbers in decimal
+		@string :   string containing number in words
+		return :    string containing number in decimal
+@function :
+	cnvtnum2str(string) :   converts a string containing number in decimal to string with numbers in words
+		@string :   string containing number in decimal
+		return :    string containing number in words
+@function :
+	words2num(string) : converts a string containing mixed numbers in decimal and also words to pure decimal numbered strings
+		@string :   string to be parsed
+		return :    string containing numbers in pure decimals
+@Licence :
+	This work is licensed under the
+	Creative Commons Attribution-NonCommercial-ShareAlike 4.0
+	International License. To view a copy of this license,
+	visit http://creativecommons.org/licenses/by-nc-sa/4.0/.
+'''
+
 import re
 import num2words
 
