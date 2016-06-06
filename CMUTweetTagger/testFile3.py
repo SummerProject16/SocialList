@@ -1,4 +1,15 @@
+'''
+@file : plurals.py
+@author (A) : Anirudh Gopu
+@project : Social List
 
+this file is not used anywhere
+
+This work is licensed under the
+Creative Commons Attribution-NonCommercial-ShareAlike 4.0
+International License. To view a copy of this license,
+visit http://creativecommons.org/licenses/by-nc-sa/4.0/.
+'''
 #To check whole file once
 
 def lengthforall():

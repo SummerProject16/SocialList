@@ -1,3 +1,17 @@
+'''
+@file : plurals.py
+@author (A) : Anirudh Gopu
+@project : Social List
+
+@function :
+    :returns ratio of non-english to english
+
+This work is licensed under the
+Creative Commons Attribution-NonCommercial-ShareAlike 4.0
+International License. To view a copy of this license,
+visit http://creativecommons.org/licenses/by-nc-sa/4.0/.
+'''
+
 import wordsegment as ws
 import enchant as en
 
