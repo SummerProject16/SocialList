@@ -1,3 +1,18 @@
+'''
+@file : jsontweets.py
+@author (A) : Madhu Kumar Dadi.
+@project : Social List
+@function :
+	jsoncheck(file1) :  converts a json format tweets file to normal tweet
+		@file1 :    file containing json data
+		return :   none
+@Licence :
+	This work is licensed under the
+	Creative Commons Attribution-NonCommercial-ShareAlike 4.0
+	International License. To view a copy of this license,
+	visit http://creativecommons.org/licenses/by-nc-sa/4.0/.
+'''
+
 import json
 import codecs
 
