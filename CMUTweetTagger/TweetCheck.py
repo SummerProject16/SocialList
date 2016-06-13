@@ -23,6 +23,7 @@
 import CMUTweetTagger as cmu
 import wordsegment
 import urllib2 as ulib
+import re
 
 def checkTweetNums(tweets,minTweets):
 	#number as adjective check
@@ -44,17 +45,38 @@ def checkTweetNums(tweets,minTweets):
 def checkTweetUrls(hashtag,urls,minUrls):
 	#check urls for hashtag matching
 	count = 0
+	hashtag = hashtag.replace("\n","")
 	for url in urls:
-		proxy = ulib.ProxyHandler({'http': "http://10.3.100.207:8080",'https': "https://10.3.100.207:8080"})
-		opener = ulib.build_opener(proxy)
-		ulib.install_opener(opener)
+		# proxy = ulib.ProxyHandler({'http': "http://10.3.100.207:8080",'https': "https://10.3.100.207:8080"})
+		# opener = ulib.build_opener(proxy)
+		# ulib.install_opener(opener)
+		print url
 		req = ulib.Request(url, headers={'User-Agent' : "Mozilla/5.0"})
 		#Getting data from the url
-		dumpdata=ulib.urlopen(req)
-		dump = dumpdata.read()
-		if True: #Will include Jaccard here for match %
+		try:
+			dumpdata=ulib.urlopen(req)
+			dump = dumpdata.read()
+			print "success"
+		except ulib.HTTPError, e:
+			dump = ""
+			print e.code
+		pattern = "<title>(.*?)</title>"
+
+		titledata = re.findall(pattern,dump)
+
+		match = 0
+		total = len(hashtag.split())
+		percent = 0
+
+		for x in titledata:
+
+			match += len(set(hashtag.lower().split()).intersection(x.lower().split()))
+			percent = float(match)/float(total)
+			total += len(hashtag.split())
+
+		if percent > 0.4:
 			count+=1
-	#TODO
+
 	if count >= minUrls:
 		return 1
 	else:
