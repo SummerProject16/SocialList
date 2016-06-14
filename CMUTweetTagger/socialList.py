@@ -60,9 +60,13 @@ for line in sociallists:
 
 postags = cmu.runtagger_parse(parsedSociallists) #gets a list of postags each for each hashtag
 
+i = 0
+
 for ParsedTag,postag,type in zip(parsedSociallists,postags,list_type):
-	checkTweetsret = checkTweets.checkTweets(ParsedTag.replace(" ",""),"tweetsorganized1.txt")
+	checkTweetsret = checkTweets.checkTweets(ParsedTag.replace(" ",""),"test/"+str(i/100)+"tweets.txt")
 	#checks for the hashtag in the files provided.
+
+	i+=1
 
 	tofile = open(argv[3],"a")
 	tofile.write(str(testFile1.test1(ParsedTag))+","+ #number of charcters in hashtag
