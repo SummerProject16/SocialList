@@ -24,6 +24,8 @@ import CMUTweetTagger as cmu
 import wordsegment
 import urllib2 as ulib
 import re
+from socialListSettings import socialListProxy,socialListHttp_Proxy,socialListHttps_Proxy
+
 
 def checkTweetNums(tweets,minTweets):
 	#number as adjective check
@@ -47,9 +49,11 @@ def checkTweetUrls(hashtag,urls,minUrls):
 	count = 0
 	hashtag = hashtag.replace("\n","")
 	for url in urls:
-		# proxy = ulib.ProxyHandler({'http': "http://10.3.100.207:8080",'https': "https://10.3.100.207:8080"})
-		# opener = ulib.build_opener(proxy)
-		# ulib.install_opener(opener)
+
+		if socialListProxy:
+			proxy = ulib.ProxyHandler({'http': socialListHttp_Proxy,'https': socialListHttps_Proxy})
+			opener = ulib.build_opener(proxy)
+			ulib.install_opener(opener)
 		print url
 		req = ulib.Request(url, headers={'User-Agent' : "Mozilla/5.0"})
 		#Getting data from the url

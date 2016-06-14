@@ -19,6 +19,8 @@ import stemming.porter2
 import urllib2 as ulib
 from wordsegment import segment
 import re
+from socialListSettings import socialListProxy,socialListHttp_Proxy,socialListHttps_Proxy
+
 
 # def checkall(postags,parsedSociallists):
 # 	j = 0
@@ -100,9 +102,13 @@ def test14(parsedTag,postag):
 	for n in seg:
 		m.append(stemming.porter2.stem(n))
 	seg = " ".join(m)
-	proxy = ulib.ProxyHandler({'https': "https://10.3.100.207:8080", 'http': "http://10.3.100.207:8080"})
-	opener = ulib.build_opener(proxy)
-	ulib.install_opener(opener)
+
+	if socialListProxy:
+
+		proxy = ulib.ProxyHandler({'http': socialListHttp_Proxy, 'https': socialListHttps_Proxy})
+		opener = ulib.build_opener(proxy)
+		ulib.install_opener(opener)
+
 	counter = 0
 	total = 0
 	for site in googledata:
