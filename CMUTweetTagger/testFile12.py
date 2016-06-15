@@ -16,6 +16,7 @@ visit http://creativecommons.org/licenses/by-nc-sa/4.0/.
 import wordsegment as ws
 import enchant as en
 
+
 def test12(tagtocheck):
 	d=en.Dict("en-US")
 	correct = 0
