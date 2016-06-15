@@ -13,7 +13,7 @@
   *	### **Files**  
 
   	  * Arff Generator : [CMUTweetTagger/SocialList.py](http://github.com/SummerProject16/project/blob/master/CMUTweetTagger/socialList.py)  
-      * Precision Generator : [CMUTweetTagger/GoogleSearch.py](http://github.com/SummerProject16/project/blob/master/CMUTweetTagger/GoogleSeach.py)  
+      * Precision Generator : [CMUTweetTagger/GoogleSearch.py](http://github.com/SummerProject16/project/blob/master/CMUTweetTagger/GoogleSearch.py)  
       * Feature Files : testFile[i].py where i is feature number  
       * String to Number converter : [CMUTweetTagger/tweets/str2num/str2num.py](http://github.com/SummerProject16/project/blob/master/CMUTweetTagger/tweets/str2num/str2num.py)  
       * Getting Tweets and Urls related to a hashtag : [CMUTweetTagger/hashtag.py](http://github.com/SummerProject16/project/blob/master/CMUTweetTagger/hashtag.py)  
