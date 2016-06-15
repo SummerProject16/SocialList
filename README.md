@@ -62,7 +62,7 @@
       * plurals     -   checks if the hashtag contains a plural common noun
       * type        -   type of socialList from available data
 
-     the data from this is stored in a file provided in csv format
+    the data from this is stored in a file provided in csv format
 
     when the GoogleSearch.py is run it passes the hashtag to testFil14.py which in turn calls the searchWeb.py and gets urls
     obtained after searching the hashtag in google, the list of urls are scraped and the popularity of the hashtag is 1 if
