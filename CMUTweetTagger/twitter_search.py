@@ -17,6 +17,7 @@ import urllib
 import requests as rq
 from requests_oauthlib import OAuth1
 import json
+from socialListSettings import socialListProxy,socialListHttp_Proxy,socialListHttps_Proxy
 
 
 def search(hashtag):
@@ -45,7 +46,14 @@ def search(hashtag):
 	try:
 		while True:
 			hashtag = urllib.quote_plus("#"+hashtag.replace("\n", "").lower())
-			r = rq.get(url="https://api.twitter.com/1.1/search/tweets.json?q=" + hashtag+"&lang=en", auth=auth)
+			if socialListProxy:
+				proxies = {
+					'http' : socialListHttp_Proxy,
+					'https' : socialListHttps_Proxy
+				}
+				r = rq.get(url="https://api.twitter.com/1.1/search/tweets.json?q=" + hashtag+"&lang=en", auth=auth,proxies=proxies)
+			else:
+				r = rq.get(url="https://api.twitter.com/1.1/search/tweets.json?q=" + hashtag+"&lang=en", auth=auth)
 			if r.status_code == 200:
 				break
 			if auth == oauth1:
