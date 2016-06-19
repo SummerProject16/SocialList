@@ -50,10 +50,12 @@ import re
 
 def getTweetsandUrls(hashtag,tweetsFilename):
 	fileopen = open(tweetsFilename)
-	allTweets = fileopen.read()
-	pattern1 = "(^.*?[#]"+hashtag.lower()+"\s.*?$)"
-	#matches all lines containing the hashtag
-	tweets = set(re.findall(pattern1,allTweets.lower(),re.MULTILINE))
+	allTweets = fileopen.readlines()
+	pattern1 = "#"+hashtag.lower()+" "
+	tweets = []
+	for tweet in allTweets:
+		if pattern1 in tweet.lower():
+			tweets.append(tweet)
 	processedTweets = []
 	processedUrls = []
 	for x in tweets:

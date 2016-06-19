@@ -36,7 +36,7 @@ def checkTweetNums(tweets,minTweets):
 	postags = cmu.runtagger_parse(processedtweets)
 	for postag in postags:
 		postag = "".join(postag)
-		if "$N" in postag or "$^" in postag or "$M" in postag or "$Z" in postag:
+		if ("$N" in postag) or ("$^" in postag) or ("$M" in postag) or ("$Z" in postag) or ("$A" in postag):
 			#Checking for Consecutive numbers and Nouns
 			count += 1
 	if count >= minTweets:
@@ -54,13 +54,11 @@ def checkTweetUrls(hashtag,urls,minUrls):
 			proxy = ulib.ProxyHandler({'http': socialListHttp_Proxy,'https': socialListHttps_Proxy})
 			opener = ulib.build_opener(proxy)
 			ulib.install_opener(opener)
-		print url
 		req = ulib.Request(url, headers={'User-Agent' : "Mozilla/5.0"})
 		#Getting data from the url
 		try:
 			dumpdata=ulib.urlopen(req)
 			dump = dumpdata.read()
-			print "success"
 		except ulib.HTTPError, e:
 			dump = ""
 			print e.code
@@ -73,7 +71,6 @@ def checkTweetUrls(hashtag,urls,minUrls):
 		percent = 0
 
 		for x in titledata:
-
 			match += len(set(hashtag.lower().split()).intersection(x.lower().split()))
 			percent = float(match)/float(total)
 			total += len(hashtag.split())

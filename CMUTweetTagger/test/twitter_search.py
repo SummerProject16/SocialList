@@ -22,6 +22,10 @@ import requests as rq
 from requests_oauthlib import OAuth1
 import json
 import time
+import sys
+
+sys.path.append('../')
+
 from socialListSettings import socialListProxy,socialListHttp_Proxy,socialListHttps_Proxy
 
 
@@ -53,6 +57,18 @@ def search(hashtag):
 	               resource_owner_secret=OAUTH_TOKEN_SECRET)
 
 	auth.append(oauth2)
+	
+	CONSUMER_KEY = "ikWn6Y3GufSzdTQsx6EEnNg18"
+	CONSUMER_SECRET = "a7oGslxpsD6QlMukY9QOyqRZYhKShM0uNDffb50R5MEkWAcncP"
+	OAUTH_TOKEN = "522650777-55McpBP5ecmCaCQtorPfc8T9BpOgxwNpeO6lfZvW"
+	OAUTH_TOKEN_SECRET = "1pDNcmdo8qUyAYtaNBNiExap53VGuofXWsmbI31iBAhG1"
+
+	oauth3 = OAuth1(CONSUMER_KEY,
+	               client_secret=CONSUMER_SECRET,
+	               resource_owner_key=OAUTH_TOKEN,
+	               resource_owner_secret=OAUTH_TOKEN_SECRET)
+
+	auth.append(oauth3)
 
 	global twitterAuthCheck
 
@@ -64,21 +80,16 @@ def search(hashtag):
 					'http' : socialListHttp_Proxy,
 					'https' : socialListHttps_Proxy
 				}
-				r = rq.get(url="https://api.twitter.com/1.1/search/tweets.json?q=" + hashtag+"&lang=en", auth=auth,proxies=proxies)
+				r = rq.get(url="https://api.twitter.com/1.1/search/tweets.json?q=" + hashtag+"&lang=en", auth=auth[twitterAuthCheck],proxies=proxies)
 			else:
-				r = rq.get(url="https://api.twitter.com/1.1/search/tweets.json?q=" + hashtag+"&lang=en", auth=auth)
+				r = rq.get(url="https://api.twitter.com/1.1/search/tweets.json?q=" + hashtag+"&lang=en", auth=auth[twitterAuthCheck])
 
 			if r.status_code == 200:
 				break
 
-			if twitterAuthCheck == 0:
-				twitterAuthCheck = 1
-				time.sleep(60)
-				print "to oauth2"
-			else:
-				twitterAuthCheck = 0
-				time.sleep(60)
-				print "to oauth1"
+		
+			twitterAuthCheck = (twitterAuthCheck+1)%len(auth)
+			print "auth changed."
 
 		return r.content
 	except:
@@ -95,14 +106,14 @@ def putSearchDataToFile(filename):
 			jsondata = json.loads(search(hashtag))
 			for j in xrange(len(jsondata['statuses'])):
 				try:
-					tempfile = open(str((i)/100)+"tweets.txt")
+					tempfile = open(str((i)/100)+"tweet.txt")
 				except:
-					tempfile = open(str((i)/100)+"tweets.txt","w")
+					tempfile = open(str((i)/100)+"tweet.txt","w")
 					tempfile.close()
-					tempfile = open(str((i)/100)+"tweets.txt")
+					tempfile = open(str((i)/100)+"tweet.txt")
 				tempdata = tempfile.readlines()
 				tempfile.close()
-				fileout = open(str((i)/100)+"tweets.txt","a")
+				fileout = open(str((i)/100)+"tweet.txt","a")
 				if jsondata['statuses'][j]['text'].replace("\n"," ")+"\n" not in tempdata:
 					fileout.write(jsondata['statuses'][j]['text'].replace("\n"," ")+"\n")
 				fileout.close()
