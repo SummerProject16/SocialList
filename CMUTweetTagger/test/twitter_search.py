@@ -46,10 +46,10 @@ def search(hashtag):
 
 	auth.append(oauth1)
 
-	CONSUMER_KEY = "nCbw9X2vgTKy1Ngmp9Sun4WGc"
-	CONSUMER_SECRET = "vwiRS1RhG1YPa94eqgoDHaL6XuVp2a9p1a2arwuXDBVw8MOUOz"
-	OAUTH_TOKEN = "522650777-f7rc84IPDDopwOs98ODq7fnWbdlZ4LI5jcIr0hz1"
-	OAUTH_TOKEN_SECRET = "ex3VEndDdbwhy2LyEG6S9n7flzNVBwBe2aKd3KAETNsg3"
+'''	CONSUMER_KEY = "fill consumer key"
+	CONSUMER_SECRET = "fill consumer secret"
+	OAUTH_TOKEN = "fill access token key"
+	OAUTH_TOKEN_SECRET = "fill token secret"
 
 	oauth2 = OAuth1(CONSUMER_KEY,
 	               client_secret=CONSUMER_SECRET,
@@ -58,17 +58,17 @@ def search(hashtag):
 
 	auth.append(oauth2)
 	
-	CONSUMER_KEY = "ikWn6Y3GufSzdTQsx6EEnNg18"
-	CONSUMER_SECRET = "a7oGslxpsD6QlMukY9QOyqRZYhKShM0uNDffb50R5MEkWAcncP"
-	OAUTH_TOKEN = "522650777-55McpBP5ecmCaCQtorPfc8T9BpOgxwNpeO6lfZvW"
-	OAUTH_TOKEN_SECRET = "1pDNcmdo8qUyAYtaNBNiExap53VGuofXWsmbI31iBAhG1"
+	CONSUMER_KEY = "fill consumer key"
+	CONSUMER_SECRET = "fill consumer secret"
+	OAUTH_TOKEN = "fill access token"
+	OAUTH_TOKEN_SECRET = "Fill token secret"
 
 	oauth3 = OAuth1(CONSUMER_KEY,
 	               client_secret=CONSUMER_SECRET,
 	               resource_owner_key=OAUTH_TOKEN,
 	               resource_owner_secret=OAUTH_TOKEN_SECRET)
 
-	auth.append(oauth3)
+	auth.append(oauth3)'''
 
 	global twitterAuthCheck
 
