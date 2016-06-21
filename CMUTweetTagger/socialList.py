@@ -63,7 +63,7 @@ postags = cmu.runtagger_parse(parsedSociallists) #gets a list of postags each fo
 i = 0
 
 for ParsedTag,postag,type in zip(parsedSociallists,postags,list_type):
-	checkTweetsret = checkTweets.checkTweets(ParsedTag.replace(" ",""),"test/"+str(i/100)+"tweets.txt")
+	checkTweetsret = checkTweets.checkTweets(ParsedTag,"test/"+str(i/100)+"tweets.txt")
 	#checks for the hashtag in the files provided.
 
 	i+=1
@@ -88,3 +88,4 @@ for ParsedTag,postag,type in zip(parsedSociallists,postags,list_type):
 	str(plurals.containspluralNouns(ParsedTag,postag))+","+ #check if hashtag contains plural common noun
 	str(type.replace("\n",""))+"\n") #class of hashtag
 	tofile.close()
+	print i

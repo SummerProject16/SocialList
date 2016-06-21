@@ -22,6 +22,10 @@ import requests as rq
 from requests_oauthlib import OAuth1
 import json
 import time
+import sys
+
+sys.path.append('../')
+
 from socialListSettings import socialListProxy,socialListHttp_Proxy,socialListHttps_Proxy
 
 
@@ -42,10 +46,10 @@ def search(hashtag):
 
 	auth.append(oauth1)
 
-	CONSUMER_KEY = "nCbw9X2vgTKy1Ngmp9Sun4WGc"
-	CONSUMER_SECRET = "vwiRS1RhG1YPa94eqgoDHaL6XuVp2a9p1a2arwuXDBVw8MOUOz"
-	OAUTH_TOKEN = "522650777-f7rc84IPDDopwOs98ODq7fnWbdlZ4LI5jcIr0hz1"
-	OAUTH_TOKEN_SECRET = "ex3VEndDdbwhy2LyEG6S9n7flzNVBwBe2aKd3KAETNsg3"
+'''	CONSUMER_KEY = "fill consumer key"
+	CONSUMER_SECRET = "fill consumer secret"
+	OAUTH_TOKEN = "fill access token key"
+	OAUTH_TOKEN_SECRET = "fill token secret"
 
 	oauth2 = OAuth1(CONSUMER_KEY,
 	               client_secret=CONSUMER_SECRET,
@@ -53,6 +57,18 @@ def search(hashtag):
 	               resource_owner_secret=OAUTH_TOKEN_SECRET)
 
 	auth.append(oauth2)
+	
+	CONSUMER_KEY = "fill consumer key"
+	CONSUMER_SECRET = "fill consumer secret"
+	OAUTH_TOKEN = "fill access token"
+	OAUTH_TOKEN_SECRET = "Fill token secret"
+
+	oauth3 = OAuth1(CONSUMER_KEY,
+	               client_secret=CONSUMER_SECRET,
+	               resource_owner_key=OAUTH_TOKEN,
+	               resource_owner_secret=OAUTH_TOKEN_SECRET)
+
+	auth.append(oauth3)'''
 
 	global twitterAuthCheck
 
@@ -64,21 +80,16 @@ def search(hashtag):
 					'http' : socialListHttp_Proxy,
 					'https' : socialListHttps_Proxy
 				}
-				r = rq.get(url="https://api.twitter.com/1.1/search/tweets.json?q=" + hashtag+"&lang=en", auth=auth,proxies=proxies)
+				r = rq.get(url="https://api.twitter.com/1.1/search/tweets.json?q=" + hashtag+"&lang=en", auth=auth[twitterAuthCheck],proxies=proxies)
 			else:
-				r = rq.get(url="https://api.twitter.com/1.1/search/tweets.json?q=" + hashtag+"&lang=en", auth=auth)
+				r = rq.get(url="https://api.twitter.com/1.1/search/tweets.json?q=" + hashtag+"&lang=en", auth=auth[twitterAuthCheck])
 
 			if r.status_code == 200:
 				break
 
-			if twitterAuthCheck == 0:
-				twitterAuthCheck = 1
-				time.sleep(60)
-				print "to oauth2"
-			else:
-				twitterAuthCheck = 0
-				time.sleep(60)
-				print "to oauth1"
+		
+			twitterAuthCheck = (twitterAuthCheck+1)%len(auth)
+			print "auth changed."
 
 		return r.content
 	except:
@@ -95,14 +106,14 @@ def putSearchDataToFile(filename):
 			jsondata = json.loads(search(hashtag))
 			for j in xrange(len(jsondata['statuses'])):
 				try:
-					tempfile = open(str((i)/100)+"tweets.txt")
+					tempfile = open(str((i)/100)+"tweet.txt")
 				except:
-					tempfile = open(str((i)/100)+"tweets.txt","w")
+					tempfile = open(str((i)/100)+"tweet.txt","w")
 					tempfile.close()
-					tempfile = open(str((i)/100)+"tweets.txt")
+					tempfile = open(str((i)/100)+"tweet.txt")
 				tempdata = tempfile.readlines()
 				tempfile.close()
-				fileout = open(str((i)/100)+"tweets.txt","a")
+				fileout = open(str((i)/100)+"tweet.txt","a")
 				if jsondata['statuses'][j]['text'].replace("\n"," ")+"\n" not in tempdata:
 					fileout.write(jsondata['statuses'][j]['text'].replace("\n"," ")+"\n")
 				fileout.close()
