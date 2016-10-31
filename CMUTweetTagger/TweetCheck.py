@@ -36,6 +36,7 @@ def checkTweetNums(tweets,minTweets):
 	postags = cmu.runtagger_parse(processedtweets)
 	for postag in postags:
 		postag = "".join(postag)
+		print postag,
 		if ("$N" in postag) or ("$^" in postag) or ("$M" in postag) or ("$Z" in postag) or ("$A" in postag):
 			#Checking for Consecutive numbers and Nouns
 			count += 1
@@ -59,9 +60,9 @@ def checkTweetUrls(hashtag,urls,minUrls):
 		try:
 			dumpdata=ulib.urlopen(req)
 			dump = dumpdata.read()
-		except ulib.HTTPError, e:
+		except:
 			dump = ""
-			print e.code
+			print url
 		pattern = "<title>(.*?)</title>"
 
 		titledata = re.findall(pattern,dump)
@@ -74,7 +75,7 @@ def checkTweetUrls(hashtag,urls,minUrls):
 			match += len(set(hashtag.lower().split()).intersection(x.lower().split()))
 			percent = float(match)/float(total)
 			total += len(hashtag.split())
-
+		print url+" percent "+str(percent)
 		if percent > 0.4:
 			count+=1
 
