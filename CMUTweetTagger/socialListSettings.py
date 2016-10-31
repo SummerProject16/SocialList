@@ -1,6 +1,6 @@
 
 
-socialListProxy = True
+socialListProxy = False
 
 socialListHttp_Proxy = "http://10.3.100.207:8080"
 
