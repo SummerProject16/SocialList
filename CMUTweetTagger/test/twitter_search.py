@@ -24,14 +24,10 @@ import json
 import time
 import sys
 
-sys.path.append('../')
-
-from socialListSettings import socialListProxy,socialListHttp_Proxy,socialListHttps_Proxy
-
-
 twitterAuthCheck = 0
 
-def search(hashtag):
+
+def search(hashtag,max_id=0):
 	CONSUMER_KEY = "eCOrAJmP6PsNo1B86xwjA0aOJ"
 	CONSUMER_SECRET = "kjL8ssd6Y9RQsMcEOoZMj9od35ZDZZ08z3cbEzSK6vHjEtRHSC"
 	OAUTH_TOKEN = "737867543415820288-cdObK8qk2R0mm5oytmf8wyEUi2uPIbP"
@@ -40,57 +36,51 @@ def search(hashtag):
 	auth = []
 
 	oauth1 = OAuth1(CONSUMER_KEY,
-	               client_secret=CONSUMER_SECRET,
-	               resource_owner_key=OAUTH_TOKEN,
-	               resource_owner_secret=OAUTH_TOKEN_SECRET)
+				   client_secret=CONSUMER_SECRET,
+				   resource_owner_key=OAUTH_TOKEN,
+				   resource_owner_secret=OAUTH_TOKEN_SECRET)
 
 	auth.append(oauth1)
 
-'''	CONSUMER_KEY = "fill consumer key"
-	CONSUMER_SECRET = "fill consumer secret"
-	OAUTH_TOKEN = "fill access token key"
-	OAUTH_TOKEN_SECRET = "fill token secret"
+	CONSUMER_KEY = "consumer key"
+	CONSUMER_SECRET = "conseumer secret"
+	OAUTH_TOKEN = "access token"
+	OAUTH_TOKEN_SECRET = "access token secret"
 
 	oauth2 = OAuth1(CONSUMER_KEY,
-	               client_secret=CONSUMER_SECRET,
-	               resource_owner_key=OAUTH_TOKEN,
-	               resource_owner_secret=OAUTH_TOKEN_SECRET)
+				   client_secret=CONSUMER_SECRET,
+				   resource_owner_key=OAUTH_TOKEN,
+				   resource_owner_secret=OAUTH_TOKEN_SECRET)
 
 	auth.append(oauth2)
 	
-	CONSUMER_KEY = "fill consumer key"
-	CONSUMER_SECRET = "fill consumer secret"
-	OAUTH_TOKEN = "fill access token"
-	OAUTH_TOKEN_SECRET = "Fill token secret"
+	CONSUMER_KEY = "consumer key"
+	CONSUMER_SECRET = "conseumer secret"
+	OAUTH_TOKEN = "access token"
+	OAUTH_TOKEN_SECRET = "access token secret"
 
 	oauth3 = OAuth1(CONSUMER_KEY,
-	               client_secret=CONSUMER_SECRET,
-	               resource_owner_key=OAUTH_TOKEN,
-	               resource_owner_secret=OAUTH_TOKEN_SECRET)
+				   client_secret=CONSUMER_SECRET,
+				   resource_owner_key=OAUTH_TOKEN,
+				   resource_owner_secret=OAUTH_TOKEN_SECRET)
 
-	auth.append(oauth3)'''
+	auth.append(oauth3)
 
 	global twitterAuthCheck
+
+	extraargs = ""
+
+	if max_id != 0:
+		extraargs = "&max_id="+str(max_id)
 
 	try:
 		while True:
 			hashtag = urllib.quote_plus("#"+hashtag.replace("\n", "").lower())
-			if socialListProxy:
-				proxies = {
-					'http' : socialListHttp_Proxy,
-					'https' : socialListHttps_Proxy
-				}
-				r = rq.get(url="https://api.twitter.com/1.1/search/tweets.json?q=" + hashtag+"&lang=en", auth=auth[twitterAuthCheck],proxies=proxies)
-			else:
-				r = rq.get(url="https://api.twitter.com/1.1/search/tweets.json?q=" + hashtag+"&lang=en", auth=auth[twitterAuthCheck])
-
+			r = rq.get(url="https://api.twitter.com/1.1/search/tweets.json?q=" + hashtag+"&lang=en&count=100"+extraargs, auth=auth[twitterAuthCheck])
 			if r.status_code == 200:
 				break
-
-		
 			twitterAuthCheck = (twitterAuthCheck+1)%len(auth)
 			print "auth changed."
-
 		return r.content
 	except:
 		pass
@@ -103,8 +93,16 @@ def putSearchDataToFile(filename):
 	i=0
 	for hashtag in hashtags:
 		try:
-			jsondata = json.loads(search(hashtag))
-			for j in xrange(len(jsondata['statuses'])):
+			tempdata = json.loads(search(hashtag))
+			jsondata = []
+			max_id = 1000000000000000000000
+			while len(tempdata['statuses']) > 0:
+				jsondata += tempdata['statuses']
+				for x in jsondata:
+					if int(x['id']) < max_id:
+						max_id = int(x['id'])-1
+				tempdata = json.loads(search(hashtag,max_id=max_id))
+			for j in xrange(len(jsondata)):
 				try:
 					tempfile = open(str((i)/100)+"tweet.txt")
 				except:
@@ -114,13 +112,17 @@ def putSearchDataToFile(filename):
 				tempdata = tempfile.readlines()
 				tempfile.close()
 				fileout = open(str((i)/100)+"tweet.txt","a")
-				if jsondata['statuses'][j]['text'].replace("\n"," ")+"\n" not in tempdata:
-					fileout.write(jsondata['statuses'][j]['text'].replace("\n"," ")+"\n")
+				indata = ""
+				for x in jsondata[j]['text'].replace("\n"," "):
+					if ord(x) <=128:
+						indata+=x
+				if indata+"\n" not in tempdata:
+					fileout.write(indata+"\n")
 				fileout.close()
 		except:
-			pass
+		 	pass
 		print i
 		i+=1
 
 
-putSearchDataToFile("../finallist.txt")
+putSearchDataToFile("file name you want to check")
